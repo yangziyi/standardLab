@@ -1,0 +1,238 @@
+2023-08-30 22:14:09.065 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 18780 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-30 22:14:09.070 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-30 22:14:10.058 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-30 22:14:10.062 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-30 22:14:10.099 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2023-08-30 22:14:11.224 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-30 22:14:11.225 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 2094 ms
+2023-08-30 22:14:13.180 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b5623b4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8c34631, org.springframework.security.web.context.SecurityContextHolderFilter@518a7b8a, org.springframework.security.web.header.HeaderWriterFilter@570b85dd, org.springframework.web.filter.CorsFilter@26463a6, org.springframework.security.web.authentication.logout.LogoutFilter@6c2fea95, lab.base.config.security.JwtLoginFilter@33563147, lab.base.config.security.JwtAuthenticationFilter@33239d72, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7253c53, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66d6e50b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19c24321, org.springframework.security.web.access.ExceptionTranslationFilter@72c1bf75, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1af6974c]
+2023-08-30 22:14:14.122 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-30 22:14:14.137 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-30 22:14:14.148 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-30 22:14:14.202 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-30 22:14:14.266 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-30 22:14:14.281 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 5.968 seconds (process running for 6.857)
+2023-08-30 22:14:35.095 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-30 22:14:35.096 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-30 22:14:35.100 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-30 22:14:36.289 [XNIO-1 task-5] INFO  org.springdoc.api.AbstractOpenApiResource.getOpenApi:371 - Init duration for springdoc-openapi is: 621 ms
+2023-08-30 22:15:13.743 [XNIO-1 task-4] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-30 22:15:14.323 [XNIO-1 task-4] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b33c794
+2023-08-30 22:15:14.327 [XNIO-1 task-4] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-30 22:16:06.908 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-30 22:16:06.911 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-30 22:16:06.931 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-30 22:16:06.940 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-08-30 22:16:52.445 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 10640 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-30 22:16:52.451 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-30 22:16:53.365 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-30 22:16:53.368 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-30 22:16:53.404 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2023-08-30 22:16:54.404 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-30 22:16:54.405 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 1893 ms
+2023-08-30 22:16:56.250 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e1d9b32, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2db6ba81, org.springframework.security.web.context.SecurityContextHolderFilter@f310675, org.springframework.security.web.header.HeaderWriterFilter@4511146f, org.springframework.web.filter.CorsFilter@41167ded, org.springframework.security.web.authentication.logout.LogoutFilter@5a69b3cf, lab.base.config.security.JwtLoginFilter@10728fe8, lab.base.config.security.JwtAuthenticationFilter@16fb9fdd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c06e145, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b780b5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14bd523b, org.springframework.security.web.access.ExceptionTranslationFilter@4b7a4c83, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d758472]
+2023-08-30 22:16:57.198 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-30 22:16:57.207 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-30 22:16:57.215 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-30 22:16:57.266 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-30 22:16:57.322 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-30 22:16:57.337 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 5.539 seconds (process running for 6.211)
+2023-08-30 22:17:23.277 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-30 22:17:23.278 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-30 22:17:23.280 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-30 22:17:23.521 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-30 22:17:23.942 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fce5e7a
+2023-08-30 22:17:23.944 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-30 22:19:49.183 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-30 22:19:49.188 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-30 22:19:49.213 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-30 22:19:49.222 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-08-30 22:19:57.482 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 14684 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-30 22:19:57.486 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-30 22:19:58.382 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-30 22:19:58.386 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-30 22:19:58.423 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2023-08-30 22:19:59.422 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-30 22:19:59.423 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 1874 ms
+2023-08-30 22:20:01.416 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d71ec5b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20e3b165, org.springframework.security.web.context.SecurityContextHolderFilter@5a69b3cf, org.springframework.security.web.header.HeaderWriterFilter@52f118aa, org.springframework.web.filter.CorsFilter@5a8d676e, org.springframework.security.web.authentication.logout.LogoutFilter@518a7b8a, lab.base.config.security.JwtLoginFilter@34d3bfca, lab.base.config.security.JwtAuthenticationFilter@6655f3cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59e4a044, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4be3de36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2484c868, org.springframework.security.web.access.ExceptionTranslationFilter@6a013bdd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c25123e]
+2023-08-30 22:20:02.387 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-30 22:20:02.398 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-30 22:20:02.413 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-30 22:20:02.464 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-30 22:20:02.519 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-30 22:20:02.535 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 5.703 seconds (process running for 6.391)
+2023-08-30 22:20:36.539 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-30 22:20:36.540 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-30 22:20:36.542 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-30 22:20:36.728 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-30 22:20:37.076 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@2341cead
+2023-08-30 22:20:37.079 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-30 22:20:37.143 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T22:20:37.143359600
+2023-08-30 22:20:37.145 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-30 22:20:37.145 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 22:20:37.146 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 22:20:37.147 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 22:20:37.299 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : "[lab.po.userPO@6e458fb2]"
+2023-08-30 22:20:37.300 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 22:20:37.301 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 22:20:37.301 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 22:20:37.352 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T22:20:37.352151100
+2023-08-30 22:20:37.353 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 22:20:37.353 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"}]}
+2023-08-30 22:21:10.502 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T22:21:10.502981600
+2023-08-30 22:21:10.502 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-30 22:21:10.503 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 22:21:10.503 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 22:21:10.504 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 22:21:10.504 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : "[lab.po.userPO@4c3643b8]"
+2023-08-30 22:21:10.505 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 22:21:10.506 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 22:21:10.506 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 22:21:10.510 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T22:21:10.510964900
+2023-08-30 22:21:10.512 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 22:21:10.512 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"}]}
+2023-08-30 22:21:26.533 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T22:21:26.533556500
+2023-08-30 22:21:26.534 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-30 22:21:26.535 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 22:21:26.535 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 22:21:26.535 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 22:21:26.536 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : "[lab.po.userPO@56a7b97d]"
+2023-08-30 22:21:26.537 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 22:21:26.538 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 22:21:26.538 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 22:21:26.542 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T22:21:26.542531600
+2023-08-30 22:21:26.543 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 22:21:26.543 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"}]}
+2023-08-30 22:21:43.487 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T22:21:43.487695100
+2023-08-30 22:21:43.488 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-30 22:21:43.489 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 22:21:43.489 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 22:21:43.489 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 22:21:43.490 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : "[lab.po.userPO@4dd9aa11]"
+2023-08-30 22:21:43.490 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 22:21:43.490 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 22:21:43.491 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 22:21:43.494 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T22:21:43.494676600
+2023-08-30 22:21:43.495 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 22:21:43.495 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"}]}
+2023-08-30 22:23:02.827 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-30 22:23:02.830 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-30 22:23:02.856 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-30 22:23:02.862 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-08-30 22:23:10.205 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 13412 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-30 22:23:10.208 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-30 22:23:11.108 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-30 22:23:11.111 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-30 22:23:11.147 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2023-08-30 22:23:12.128 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-30 22:23:12.129 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 1865 ms
+2023-08-30 22:23:13.931 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2484c868, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19d13d04, org.springframework.security.web.context.SecurityContextHolderFilter@5c03eb4e, org.springframework.security.web.header.HeaderWriterFilter@7c460, org.springframework.web.filter.CorsFilter@733fae8, org.springframework.security.web.authentication.logout.LogoutFilter@64829470, lab.base.config.security.JwtLoginFilter@30d5fc1b, lab.base.config.security.JwtAuthenticationFilter@7957aa57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e836aed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bc41565, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b92ea9d, org.springframework.security.web.access.ExceptionTranslationFilter@31cd0efa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72641613]
+2023-08-30 22:23:14.941 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-30 22:23:14.954 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-30 22:23:14.965 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-30 22:23:15.028 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-30 22:23:15.109 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-30 22:23:15.126 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 5.555 seconds (process running for 6.242)
+2023-08-30 22:23:18.356 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-30 22:23:18.357 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-30 22:23:18.359 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-30 22:23:18.556 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-30 22:23:18.922 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@30401a6e
+2023-08-30 22:23:18.923 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-30 22:23:18.977 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T22:23:18.977150400
+2023-08-30 22:23:18.977 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-30 22:23:18.978 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 22:23:18.978 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 22:23:18.980 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 22:23:19.157 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"end":0,"ownerid":0,"start":0,"state":0,"updateid":0}]
+2023-08-30 22:23:19.159 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 22:23:19.159 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 22:23:19.161 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 22:23:19.202 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T22:23:19.202952600
+2023-08-30 22:23:19.204 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 22:23:19.204 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"}]}
+2023-08-30 22:34:58.687 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T22:34:58.687420200
+2023-08-30 22:34:58.689 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-30 22:34:58.689 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 22:34:58.689 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 22:34:58.690 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 22:34:58.691 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"end":0,"ownerid":0,"start":0,"state":0,"updateid":0}]
+2023-08-30 22:34:58.691 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 22:34:58.691 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 22:34:58.692 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 22:34:58.697 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T22:34:58.697393900
+2023-08-30 22:34:58.698 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 22:34:58.699 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"}]}
+2023-08-30 22:35:07.007 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T22:35:07.007354100
+2023-08-30 22:35:07.008 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-30 22:35:07.009 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 22:35:07.010 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 22:35:07.010 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 22:35:07.011 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"end":0,"ownerid":0,"start":0,"state":0,"updateid":0}]
+2023-08-30 22:35:07.012 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 22:35:07.013 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 22:35:07.013 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 22:35:07.020 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T22:35:07.020858600
+2023-08-30 22:35:07.021 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 22:35:07.022 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"}]}
+2023-08-30 22:38:01.873 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T22:38:01.872592300
+2023-08-30 22:38:01.873 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/updUser
+2023-08-30 22:38:01.874 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 22:38:01.874 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 22:38:01.874 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 22:38:01.880 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"ownerid":0,"state":0,"updateid":0}]
+2023-08-30 22:38:01.881 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 22:38:01.882 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 22:38:01.882 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 22:38:02.622 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T22:38:02.622339500
+2023-08-30 22:38:02.623 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 22:38:02.624 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"msg":"用户null更新成功"}
+2023-08-30 23:14:04.694 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T23:14:04.694091800
+2023-08-30 23:14:04.695 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/updUser
+2023-08-30 23:14:04.696 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 23:14:04.696 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 23:14:04.697 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 23:14:04.698 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"ownerid":0,"state":0,"updateid":0}]
+2023-08-30 23:14:04.699 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 23:14:04.700 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 23:14:04.701 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 23:14:04.730 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T23:14:04.730992500
+2023-08-30 23:14:04.731 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 23:14:04.732 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"msg":"用户null更新成功"}
+2023-08-30 23:19:42.780 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T23:19:42.780581900
+2023-08-30 23:19:42.781 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-30 23:19:42.781 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 23:19:42.782 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 23:19:42.782 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 23:19:42.783 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"end":0,"ownerid":0,"start":0,"state":0,"updateid":0}]
+2023-08-30 23:19:42.784 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 23:19:42.785 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 23:19:42.786 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 23:19:42.789 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T23:19:42.789769300
+2023-08-30 23:19:42.790 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 23:19:42.790 [XNIO-1 task-3] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"}]}
+2023-08-30 23:32:29.834 [XNIO-1 task-4] INFO  org.springdoc.api.AbstractOpenApiResource.getOpenApi:371 - Init duration for springdoc-openapi is: 771 ms
+2023-08-30 23:33:09.051 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T23:33:09.051175600
+2023-08-30 23:33:09.052 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/updUser
+2023-08-30 23:33:09.053 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 23:33:09.053 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 23:33:09.054 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 23:33:09.054 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"id":"10","ownerid":0,"state":1,"updateid":0}]
+2023-08-30 23:33:09.055 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 23:33:09.055 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 23:33:09.056 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 23:33:09.075 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T23:33:09.075022600
+2023-08-30 23:33:09.076 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 23:33:09.076 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"msg":"用户null更新成功"}
+2023-08-30 23:52:52.428 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-30T23:52:52.428568100
+2023-08-30 23:52:52.429 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/updUser
+2023-08-30 23:52:52.430 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-30 23:52:52.430 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-30 23:52:52.430 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-30 23:52:52.432 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"id":"10","ownerid":0,"state":1,"updateid":0}]
+2023-08-30 23:52:52.432 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-30 23:52:52.432 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-30 23:52:52.432 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-30 23:52:52.450 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-30T23:52:52.450528500
+2023-08-30 23:52:52.451 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-30 23:52:52.451 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"msg":"用户null更新成功"}

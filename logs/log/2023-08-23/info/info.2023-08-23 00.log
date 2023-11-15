@@ -1,0 +1,16 @@
+2023-08-23 00:00:20.322 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-23T00:00:20.322253
+2023-08-23 00:00:20.327 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-23 00:00:20.327 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-23 00:00:20.328 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-23 00:00:20.329 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-23 00:00:20.330 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.userPO@45c7b9d2]
+2023-08-23 00:00:20.331 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-23 00:00:20.331 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-23 00:00:20.332 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-23 00:00:20.341 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:85 - 请求结束时间 : 2023-08-23T00:00:20.341653700
+2023-08-23 00:00:20.341 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求耗时 : 19
+2023-08-23 00:00:20.342 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:88 - 请求返回 : {"code":200,"payload":[{"id":"10","name":"管理员","password":"E10ADC3949BA59ABBE56E057F20F883E","username":"admin"},{"id":"11","name":"测试人员","password":"123456","username":"test"},{"id":"12","name":"kefu","password":"123456","username":"客服"},{"id":"13","name":"客服","password":"123456","username":"kefu"},{"id":"14","name":"客服","password":"123456","username":"kefu01"},{"id":"15","name":"采样确认人","password":"123456","username":"reply"},{"id":"16","name":"复核","password":"123456","username":"report"},{"id":"19","name":"杨子亿","password":"E10ADC3949BA59ABBE56E057F20F883E","username":"yzy"},{"id":"20","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"test1246gds"},{"id":"21","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"testqwr"},{"id":"22","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"test7956"},{"id":"23","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"testtyui"},{"id":"24","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"testt347436"},{"id":"25","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"testtgjdfh"}]}
+2023-08-23 00:02:14.811 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-23 00:02:14.814 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-23 00:02:14.830 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-23 00:02:14.836 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.

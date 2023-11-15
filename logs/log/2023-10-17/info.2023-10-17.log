@@ -1,0 +1,188 @@
+2023-10-17 01:12:59.945 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 2572 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-10-17 01:12:59.952 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 01:13:02.578 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-17 01:13:02.602 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-17 01:13:02.695 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2023-10-17 01:13:05.470 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-10-17 01:13:05.472 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 5376 ms
+2023-10-17 01:13:10.488 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53f94afe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@304e1e4e, org.springframework.security.web.context.SecurityContextHolderFilter@53f1fcc2, org.springframework.security.web.header.HeaderWriterFilter@a72925, org.springframework.web.filter.CorsFilter@7d4e424e, org.springframework.security.web.authentication.logout.LogoutFilter@27b7e663, lab.base.config.security.JwtLoginFilter@799206ad, lab.base.config.security.JwtAuthenticationFilter@60251ddb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70f3bf00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49770ef9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2059c3ff, org.springframework.security.web.access.ExceptionTranslationFilter@1afabf06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23e573e]
+2023-10-17 01:13:11.212 [main] INFO  org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:13:13.028 [main] INFO  o.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:13:13.789 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:13:14.037 [main] INFO  o.f.s.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:13:14.215 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1084 - Found 5 Engine Configurators in total:
+2023-10-17 01:13:14.216 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:13:14.217 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:13:14.218 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:13:14.218 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:13:14.220 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:13:14.220 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:13:14.232 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:13:14.254 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:13:14.261 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:13:14.270 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:13:14.365 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-10-17 01:13:15.269 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@63437af4
+2023-10-17 01:13:15.274 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-10-17 01:13:17.328 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:13:18.067 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2023-10-17 01:13:18.160 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2023-10-17 01:13:18.180 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:13:19.422 [main] INFO  liquibase.changelog.log:37 - Reading from test.FLW_EV_DATABASECHANGELOG
+2023-10-17 01:13:19.439 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:13:19.519 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2023-10-17 01:13:19.522 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:13:19.567 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2023-10-17 01:13:19.571 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:13:19.678 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_DMN_DATABASECHANGELOG
+2023-10-17 01:13:19.692 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:13:19.733 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2023-10-17 01:13:19.736 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:13:20.100 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_CMMN_DATABASECHANGELOG
+2023-10-17 01:13:20.105 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:13:20.177 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2023-10-17 01:13:20.238 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_APP_DATABASECHANGELOG
+2023-10-17 01:13:20.243 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:13:20.253 [main] INFO  org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2023-10-17 01:13:22.715 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-17 01:13:22.747 [Thread-3] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine cmmn
+2023-10-17 01:13:22.748 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-17 01:13:22.749 [Thread-1] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine cmmn
+2023-10-17 01:13:22.763 [main] INFO  o.f.spring.configurator.DefaultAutoDeploymentStrategy.deployResources:92 - Deploying resources [file [F:\IdeaProjects\standardLab\out\production\resources\processes\test.bpmn20.xml]] for engine org.flowable.engine.impl.ProcessEngineImpl@352b4cf deployment name hint SpringBootAutoDeployment
+2023-10-17 01:13:22.767 [Thread-5] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:109 - starting to acquire async jobs due for engine bpmn
+2023-10-17 01:13:22.769 [Thread-6] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine bpmn
+2023-10-17 01:13:22.779 [Thread-4] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine bpmn
+2023-10-17 01:13:23.125 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-17 01:13:23.126 [flowable-cmmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine cmmn
+2023-10-17 01:13:23.126 [flowable-cmmn-acquire-async-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:143 - stopped async job due acquisition for engine cmmn
+2023-10-17 01:13:23.151 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-17 01:13:23.152 [flowable-bpmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine bpmn
+2023-10-17 01:13:23.154 [flowable-bpmn-acquire-async-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:143 - stopped async job due acquisition for engine bpmn
+2023-10-17 01:13:23.228 [main] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-10-17 01:13:23.242 [main] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-10-17 01:16:09.931 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 13340 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-10-17 01:16:09.938 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 01:16:12.512 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-17 01:16:12.521 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-17 01:16:12.612 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2023-10-17 01:16:15.017 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-10-17 01:16:15.019 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 4950 ms
+2023-10-17 01:16:19.408 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d4e424e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@799206ad, org.springframework.security.web.context.SecurityContextHolderFilter@70f3bf00, org.springframework.security.web.header.HeaderWriterFilter@4c6eaa65, org.springframework.web.filter.CorsFilter@60251ddb, org.springframework.security.web.authentication.logout.LogoutFilter@703eead0, lab.base.config.security.JwtLoginFilter@2059c3ff, lab.base.config.security.JwtAuthenticationFilter@2f8ab988, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15bcecf9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f0cdd0f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46c475ba, org.springframework.security.web.access.ExceptionTranslationFilter@443b6765, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52463255]
+2023-10-17 01:16:20.211 [main] INFO  org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:16:22.013 [main] INFO  o.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:16:22.730 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:16:22.958 [main] INFO  o.f.s.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:16:23.187 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1084 - Found 5 Engine Configurators in total:
+2023-10-17 01:16:23.188 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:16:23.189 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:16:23.189 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:16:23.190 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:16:23.191 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:16:23.191 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:16:23.202 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:16:23.212 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:16:23.218 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:16:23.226 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:16:23.297 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-10-17 01:16:24.020 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@3284f91f
+2023-10-17 01:16:24.026 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-10-17 01:16:26.101 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:16:26.824 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2023-10-17 01:16:26.901 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2023-10-17 01:16:26.920 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:16:28.290 [main] INFO  liquibase.changelog.log:37 - Reading from test.FLW_EV_DATABASECHANGELOG
+2023-10-17 01:16:28.308 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:16:28.392 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2023-10-17 01:16:28.395 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:16:28.443 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2023-10-17 01:16:28.447 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:16:28.577 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_DMN_DATABASECHANGELOG
+2023-10-17 01:16:28.584 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:16:28.630 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2023-10-17 01:16:28.634 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:16:29.030 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_CMMN_DATABASECHANGELOG
+2023-10-17 01:16:29.035 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:16:29.103 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2023-10-17 01:16:29.168 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_APP_DATABASECHANGELOG
+2023-10-17 01:16:29.173 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:16:29.183 [main] INFO  org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2023-10-17 01:16:31.728 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-17 01:16:31.749 [Thread-3] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine cmmn
+2023-10-17 01:16:31.750 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-17 01:16:31.751 [Thread-1] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine cmmn
+2023-10-17 01:16:31.761 [main] INFO  o.f.spring.configurator.DefaultAutoDeploymentStrategy.deployResources:92 - Deploying resources [file [F:\IdeaProjects\standardLab\out\production\resources\processes\test.bpmn20.xml]] for engine org.flowable.engine.impl.ProcessEngineImpl@8a607a9 deployment name hint SpringBootAutoDeployment
+2023-10-17 01:16:31.763 [Thread-5] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:109 - starting to acquire async jobs due for engine bpmn
+2023-10-17 01:16:31.763 [Thread-4] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine bpmn
+2023-10-17 01:16:31.765 [Thread-6] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine bpmn
+2023-10-17 01:16:32.071 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-17 01:16:32.072 [flowable-cmmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine cmmn
+2023-10-17 01:16:32.091 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-17 01:16:32.092 [flowable-bpmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine bpmn
+2023-10-17 01:16:32.158 [main] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-10-17 01:16:32.173 [main] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-10-17 01:17:29.916 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 15812 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-10-17 01:17:29.922 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 01:17:32.039 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-17 01:17:32.046 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-17 01:17:32.141 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+2023-10-17 01:17:34.086 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-10-17 01:17:34.093 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 4043 ms
+2023-10-17 01:17:37.696 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46c475ba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e47637c, org.springframework.security.web.context.SecurityContextHolderFilter@539bb233, org.springframework.security.web.header.HeaderWriterFilter@15bcecf9, org.springframework.web.filter.CorsFilter@606f0f70, org.springframework.security.web.authentication.logout.LogoutFilter@68feca3a, lab.base.config.security.JwtLoginFilter@1a53ac0c, lab.base.config.security.JwtAuthenticationFilter@7fdf7359, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@87f1201, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@796613b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a36a35d, org.springframework.security.web.access.ExceptionTranslationFilter@6a261998, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d4e424e]
+2023-10-17 01:17:38.308 [main] INFO  org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:17:38.717 [main] INFO  org.flowable.spring.boot.ProcessEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:17:39.871 [main] INFO  o.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:17:40.484 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:17:40.724 [main] INFO  o.f.s.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-17 01:17:40.924 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1084 - Found 5 Engine Configurators in total:
+2023-10-17 01:17:40.925 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:17:40.925 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:17:40.926 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:17:40.927 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:17:40.927 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:17:40.927 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:17:40.950 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:17:40.959 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:17:40.964 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:17:40.968 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:17:41.026 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-10-17 01:17:41.529 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@40cd02fc
+2023-10-17 01:17:41.533 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-10-17 01:17:43.363 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-17 01:17:43.929 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2023-10-17 01:17:43.990 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2023-10-17 01:17:44.004 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-17 01:17:44.996 [main] INFO  liquibase.changelog.log:37 - Reading from test.FLW_EV_DATABASECHANGELOG
+2023-10-17 01:17:45.008 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:17:45.071 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2023-10-17 01:17:45.074 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-17 01:17:45.106 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2023-10-17 01:17:45.108 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-17 01:17:45.202 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_DMN_DATABASECHANGELOG
+2023-10-17 01:17:45.207 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:17:45.237 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2023-10-17 01:17:45.240 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-17 01:17:45.487 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_CMMN_DATABASECHANGELOG
+2023-10-17 01:17:45.491 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:17:45.531 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2023-10-17 01:17:45.582 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_APP_DATABASECHANGELOG
+2023-10-17 01:17:45.585 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-17 01:17:45.592 [main] INFO  org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2023-10-17 01:17:47.095 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-17 01:17:47.121 [Thread-3] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine cmmn
+2023-10-17 01:17:47.124 [Thread-1] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine cmmn
+2023-10-17 01:17:47.125 [Thread-2] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:109 - starting to acquire async jobs due for engine cmmn
+2023-10-17 01:17:47.134 [Thread-4] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine bpmn
+2023-10-17 01:17:47.137 [Thread-6] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine bpmn
+2023-10-17 01:17:47.154 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-10-17 01:17:47.176 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-10-17 01:17:47.195 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-10-17 01:17:47.286 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-10-17 01:17:47.427 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8080 (http)
+2023-10-17 01:17:47.468 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 18.732 seconds (process running for 20.162)
+2023-10-17 03:34:55.404 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-10-17 03:34:55.459 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-17 03:34:55.460 [flowable-cmmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine cmmn
+2023-10-17 03:34:55.472 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-17 03:34:55.473 [flowable-bpmn-acquire-async-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:143 - stopped async job due acquisition for engine bpmn
+2023-10-17 03:34:55.514 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-10-17 03:34:55.520 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.

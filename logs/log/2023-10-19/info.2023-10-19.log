@@ -1,0 +1,9 @@
+2023-10-19 01:17:38.531 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-10-19 01:17:38.559 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-19 01:17:38.577 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-19 01:17:38.578 [flowable-cmmn-acquire-async-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:143 - stopped async job due acquisition for engine cmmn
+2023-10-19 01:17:38.578 [flowable-cmmn-acquire-timer-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:131 - stopped async job due acquisition for engine cmmn
+2023-10-19 01:17:38.591 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-19 01:17:38.592 [flowable-bpmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine bpmn
+2023-10-19 01:17:38.697 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-10-19 01:17:38.725 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.

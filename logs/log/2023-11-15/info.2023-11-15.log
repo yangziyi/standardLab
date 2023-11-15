@@ -1,0 +1,680 @@
+2023-11-15 00:03:38.113 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-11-15 00:03:38.123 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-15 00:03:38.163 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-11-15 00:03:38.169 [flowable-cmmn-acquire-timer-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:131 - stopped async job due acquisition for engine cmmn
+2023-11-15 00:03:38.169 [flowable-cmmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine cmmn
+2023-11-15 00:03:38.186 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-11-15 00:03:38.186 [flowable-bpmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine bpmn
+2023-11-15 00:03:38.186 [flowable-bpmn-acquire-async-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:143 - stopped async job due acquisition for engine bpmn
+2023-11-15 00:03:38.334 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-11-15 00:03:38.338 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-11-15 12:34:10.283 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 1152 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-11-15 12:34:10.289 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-11-15 12:34:11.886 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-15 12:34:11.892 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-15 12:34:11.944 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2023-11-15 12:34:13.670 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-11-15 12:34:13.670 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 3301 ms
+2023-11-15 12:34:15.347 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-11-15 12:34:15.931 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@7fdff56b
+2023-11-15 12:34:15.935 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-11-15 12:34:18.278 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@60b8c05c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62d72091, org.springframework.security.web.context.SecurityContextHolderFilter@77cd1f67, org.springframework.security.web.header.HeaderWriterFilter@3119fcad, org.springframework.web.filter.CorsFilter@76a86677, org.springframework.security.web.authentication.logout.LogoutFilter@2dedde74, lab.base.config.security.JwtLoginFilter@3b863b4, lab.base.config.security.JwtAuthenticationFilter@2524f9bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@647d3279, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b9a1be5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e2c8622, org.springframework.security.web.access.ExceptionTranslationFilter@5f606ab6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75937998]
+2023-11-15 12:34:18.844 [main] INFO  org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:34:19.156 [main] INFO  org.flowable.spring.boot.ProcessEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:34:21.006 [main] INFO  o.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:34:22.258 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:34:22.793 [main] INFO  o.f.s.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:34:23.356 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1084 - Found 5 Engine Configurators in total:
+2023-11-15 12:34:23.357 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-11-15 12:34:23.358 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-11-15 12:34:23.359 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-11-15 12:34:23.361 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-11-15 12:34:23.362 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-11-15 12:34:23.363 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-11-15 12:34:23.378 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-11-15 12:34:23.398 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-11-15 12:34:23.408 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-11-15 12:34:23.415 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-11-15 12:34:26.750 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-11-15 12:34:27.738 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2023-11-15 12:34:27.838 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2023-11-15 12:34:27.916 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-11-15 12:34:29.860 [main] INFO  liquibase.changelog.log:37 - Reading from test.FLW_EV_DATABASECHANGELOG
+2023-11-15 12:34:29.885 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-11-15 12:34:30.023 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2023-11-15 12:34:30.025 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-11-15 12:34:30.067 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2023-11-15 12:34:30.069 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-11-15 12:34:30.197 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_DMN_DATABASECHANGELOG
+2023-11-15 12:34:30.202 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-11-15 12:34:30.230 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2023-11-15 12:34:30.232 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-11-15 12:34:30.715 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_CMMN_DATABASECHANGELOG
+2023-11-15 12:34:30.792 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-11-15 12:34:30.860 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2023-11-15 12:34:31.001 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_APP_DATABASECHANGELOG
+2023-11-15 12:34:31.122 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-11-15 12:34:31.152 [main] INFO  org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2023-11-15 12:34:35.159 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-11-15 12:34:35.175 [Thread-3] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine cmmn
+2023-11-15 12:34:35.176 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-11-15 12:34:35.177 [Thread-2] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:109 - starting to acquire async jobs due for engine cmmn
+2023-11-15 12:34:35.186 [Thread-4] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine bpmn
+2023-11-15 12:34:35.189 [Thread-6] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine bpmn
+2023-11-15 12:34:35.201 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-11-15 12:34:35.220 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-11-15 12:34:35.242 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-11-15 12:34:35.295 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-11-15 12:34:35.389 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8080 (http)
+2023-11-15 12:34:35.433 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 26.023 seconds (process running for 27.27)
+2023-11-15 12:42:40.588 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-15 12:42:40.588 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-11-15 12:42:40.592 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 3 ms
+2023-11-15 12:42:41.033 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:42:41.033978400
+2023-11-15 12:42:41.034 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:42:41.034 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:42:41.035 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:42:41.036 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:42:41.040 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 12:42:41.042 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:42:41.042 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:42:41.042 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:42:41.069 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:42:41.069178300
+2023-11-15 12:42:41.070 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:42:41.070 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[]}
+2023-11-15 12:42:43.102 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:42:43.102159
+2023-11-15 12:42:43.103 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:42:43.104 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:42:43.104 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:42:43.105 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:42:43.105 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-14'","orderby":["test001","testdocno"]}]
+2023-11-15 12:42:43.106 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:42:43.106 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:42:43.107 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:42:43.122 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:42:43.122106
+2023-11-15 12:42:43.122 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:42:43.123 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":2,"testdocno":"test001","test001":1699891200000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1699896222000,"updateid":10,"updateusername":"10","updatename":"10","updatetime":1699976068000},{"id":3,"testdocno":"test002","test001":1699891200000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1699896728000,"updateid":10,"updateusername":"10","updatename":"10","updatetime":1699976068000}]}
+2023-11-15 12:42:46.141 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:42:46.141680800
+2023-11-15 12:42:46.142 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:42:46.142 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:42:46.142 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:42:46.143 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:42:46.143 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'undefined'","orderby":["test001","testdocno"]}]
+2023-11-15 12:42:46.143 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:42:46.144 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:42:46.144 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:42:46.148 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:42:46.148663800
+2023-11-15 12:42:46.149 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:42:46.149 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[]}
+2023-11-15 12:42:49.408 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:42:49.408341
+2023-11-15 12:42:49.409 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/updData
+2023-11-15 12:42:49.409 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:42:49.410 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:42:49.410 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:42:49.410 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"test":{"id":0,"testdocno":"test003","test001":"2023-11-15"},"testdetail":[{"testdetaildocno":"test003","testdetail001":"项次1","testdetail002":"选项1","testdetail003":"2023-11-15"},{"testdetaildocno":"test003","testdetail001":"项次2","testdetail002":"选项2","testdetail003":"2023-11-16"},{"testdetaildocno":"test003","testdetail001":"项次3","testdetail002":"选项1","testdetail003":"2023-11-17"},{"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":"2023-11-18"}]}]
+2023-11-15 12:42:49.411 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:42:49.411 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:42:49.411 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:42:49.479 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:42:49.479185200
+2023-11-15 12:42:49.480 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:42:49.480 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据更新成功","payload":null}
+2023-11-15 12:43:01.021 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:43:01.021600700
+2023-11-15 12:43:01.022 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:43:01.022 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:43:01.023 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:43:01.023 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:43:01.023 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 12:43:01.023 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:43:01.024 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:43:01.024 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:43:01.029 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:43:01.029610300
+2023-11-15 12:43:01.029 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:43:01.030 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[]}
+2023-11-15 12:43:03.080 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:43:03.080584600
+2023-11-15 12:43:03.081 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:43:03.082 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:43:03.082 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:43:03.083 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:43:03.083 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'undefined'","orderby":["test001","testdocno"]}]
+2023-11-15 12:43:03.084 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:43:03.084 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:43:03.084 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:43:03.090 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:43:03.090721900
+2023-11-15 12:43:03.091 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:43:03.092 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[]}
+2023-11-15 12:43:05.494 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:43:05.494144300
+2023-11-15 12:43:05.496 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/updData
+2023-11-15 12:43:05.496 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:43:05.497 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:43:05.498 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:43:05.499 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"test":{"id":0,"testdocno":"test003","test001":"2023-11-15"},"testdetail":[{"testdetaildocno":"test003","testdetail001":"项次1","testdetail002":"选项1","testdetail003":"2023-11-15"},{"testdetaildocno":"test003","testdetail001":"项次2","testdetail002":"选项2","testdetail003":"2023-11-16"},{"testdetaildocno":"test003","testdetail001":"项次3","testdetail002":"选项1","testdetail003":"2023-11-17"},{"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":"2023-11-18"}]}]
+2023-11-15 12:43:05.500 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:43:05.501 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:43:05.502 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:43:05.539 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:43:05.539764
+2023-11-15 12:43:05.541 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:43:05.541 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据更新成功","payload":null}
+2023-11-15 12:45:41.294 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:45:41.294128200
+2023-11-15 12:45:41.294 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/insData
+2023-11-15 12:45:41.295 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:45:41.295 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:45:41.295 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:45:41.296 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"test":{"testdocno":"test003","test001":"2023-11-15"},"testdetail":[{"testdetaildocno":"test003","testdetail001":"项次1","testdetail002":"选项1","testdetail003":"2023-11-15"},{"testdetaildocno":"test003","testdetail001":"项次2","testdetail002":"选项2","testdetail003":"2023-11-16"},{"testdetaildocno":"test003","testdetail001":"项次3","testdetail002":"选项1","testdetail003":"2023-11-17"},{"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":"2023-11-18"}]}]
+2023-11-15 12:45:41.296 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:45:41.296 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:45:41.296 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:45:41.319 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:45:41.319364300
+2023-11-15 12:45:41.319 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:45:41.320 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据新增成功","payload":null}
+2023-11-15 12:45:45.314 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:45:45.314660800
+2023-11-15 12:45:45.314 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:45:45.315 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:45:45.315 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:45:45.315 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:45:45.315 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 12:45:45.316 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:45:45.316 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:45:45.316 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:45:45.319 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:45:45.319686600
+2023-11-15 12:45:45.320 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:45:45.320 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":4,"testdocno":"test003","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700023541000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700023541000}]}
+2023-11-15 12:45:47.442 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:45:47.442689300
+2023-11-15 12:45:47.443 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:45:47.443 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:45:47.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:45:47.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:45:47.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test003'","orderby":["test001","testdocno"]}]
+2023-11-15 12:45:47.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:45:47.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:45:47.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:45:47.449 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:45:47.449671
+2023-11-15 12:45:47.449 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:45:47.449 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":4,"testdocno":"test003","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700023541000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700023541000}]}
+2023-11-15 12:45:47.683 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:45:47.683516200
+2023-11-15 12:45:47.684 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:45:47.684 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:45:47.685 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:45:47.685 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:45:47.686 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test003'"}]
+2023-11-15 12:45:47.686 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:45:47.687 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:45:47.687 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:45:47.693 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:45:47.693488500
+2023-11-15 12:45:47.694 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:45:47.694 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":1,"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":1700236800000},{"id":2,"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":1700236800000},{"id":3,"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":1700236800000},{"id":4,"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":1700236800000},{"id":5,"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":1700236800000},{"id":6,"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":1700236800000},{"id":7,"testdetaildocno":"test003","testdetail001":"项次1","testdetail002":"选项1","testdetail003":1699977600000},{"id":8,"testdetaildocno":"test003","testdetail001":"项次2","testdetail002":"选项2","testdetail003":1700064000000},{"id":9,"testdetaildocno":"test003","testdetail001":"项次3","testdetail002":"选项1","testdetail003":1700150400000},{"id":10,"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":1700236800000}]}
+2023-11-15 12:51:49.467 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-11-15 12:51:49.471 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-15 12:51:49.475 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-11-15 12:51:49.475 [flowable-cmmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine cmmn
+2023-11-15 12:51:49.482 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-11-15 12:51:49.483 [flowable-bpmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine bpmn
+2023-11-15 12:51:49.620 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-11-15 12:51:49.625 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-11-15 12:52:19.815 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 1764 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-11-15 12:52:19.820 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-11-15 12:52:20.852 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-11-15 12:52:20.856 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-15 12:52:20.898 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2023-11-15 12:52:21.954 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-11-15 12:52:21.955 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 2078 ms
+2023-11-15 12:52:23.050 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-11-15 12:52:23.392 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b5f022f
+2023-11-15 12:52:23.395 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-11-15 12:52:25.004 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6012bee8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60b8c05c, org.springframework.security.web.context.SecurityContextHolderFilter@33a39d7e, org.springframework.security.web.header.HeaderWriterFilter@198a653, org.springframework.web.filter.CorsFilter@62d72091, org.springframework.security.web.authentication.logout.LogoutFilter@125ed27, lab.base.config.security.JwtLoginFilter@76a86677, lab.base.config.security.JwtAuthenticationFilter@3b863b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@94f79a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@647d3279, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2524f9bf, org.springframework.security.web.access.ExceptionTranslationFilter@52ec5ba6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57f83dc7]
+2023-11-15 12:52:25.352 [main] INFO  org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:52:25.531 [main] INFO  org.flowable.spring.boot.ProcessEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:52:26.130 [main] INFO  o.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:52:26.441 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:52:26.540 [main] INFO  o.f.s.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-11-15 12:52:26.641 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1084 - Found 5 Engine Configurators in total:
+2023-11-15 12:52:26.642 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-11-15 12:52:26.642 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-11-15 12:52:26.642 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-11-15 12:52:26.642 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-11-15 12:52:26.642 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-11-15 12:52:26.643 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-11-15 12:52:26.649 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-11-15 12:52:26.653 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-11-15 12:52:26.656 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-11-15 12:52:26.660 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-11-15 12:52:27.695 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-11-15 12:52:27.984 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2023-11-15 12:52:28.002 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2023-11-15 12:52:28.010 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-11-15 12:52:28.510 [main] INFO  liquibase.changelog.log:37 - Reading from test.FLW_EV_DATABASECHANGELOG
+2023-11-15 12:52:28.518 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-11-15 12:52:28.550 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2023-11-15 12:52:28.552 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-11-15 12:52:28.567 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2023-11-15 12:52:28.568 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-11-15 12:52:28.610 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_DMN_DATABASECHANGELOG
+2023-11-15 12:52:28.612 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-11-15 12:52:28.627 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2023-11-15 12:52:28.628 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-11-15 12:52:28.803 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_CMMN_DATABASECHANGELOG
+2023-11-15 12:52:28.807 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-11-15 12:52:28.840 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2023-11-15 12:52:28.870 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_APP_DATABASECHANGELOG
+2023-11-15 12:52:28.872 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-11-15 12:52:28.877 [main] INFO  org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2023-11-15 12:52:29.928 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-11-15 12:52:29.939 [Thread-3] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine cmmn
+2023-11-15 12:52:29.939 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-11-15 12:52:29.940 [Thread-2] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:109 - starting to acquire async jobs due for engine cmmn
+2023-11-15 12:52:29.945 [Thread-4] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine bpmn
+2023-11-15 12:52:29.946 [Thread-6] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine bpmn
+2023-11-15 12:52:29.957 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-11-15 12:52:29.973 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-11-15 12:52:29.983 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-11-15 12:52:30.019 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-11-15 12:52:30.079 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8080 (http)
+2023-11-15 12:52:30.102 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 10.912 seconds (process running for 11.687)
+2023-11-15 12:53:49.215 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-15 12:53:49.215 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-11-15 12:53:49.219 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-11-15 12:53:49.595 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:53:49.595249
+2023-11-15 12:53:49.596 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/insData
+2023-11-15 12:53:49.596 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:53:49.596 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:53:49.597 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:53:49.599 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"test":{"testdocno":"test001","test001":"2023-11-15"},"testdetail":[{"id":7,"testdetaildocno":"test003","testdetail001":"项次1","testdetail002":"选项1","testdetail003":"2023-11-15"},{"id":8,"testdetaildocno":"test003","testdetail001":"项次2","testdetail002":"选项2","testdetail003":"2023-11-16"},{"id":9,"testdetaildocno":"test003","testdetail001":"项次3","testdetail002":"选项1","testdetail003":"2023-11-17"},{"id":10,"testdetaildocno":"test003","testdetail001":"项次4","testdetail002":"选项3","testdetail003":"2023-11-18"}]}]
+2023-11-15 12:53:49.600 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:53:49.601 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:53:49.601 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:53:49.670 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:53:49.670323900
+2023-11-15 12:53:49.671 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:53:49.672 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据新增成功","payload":null}
+2023-11-15 12:53:53.582 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:53:53.582936600
+2023-11-15 12:53:53.583 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:53:53.584 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:53:53.585 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:53:53.585 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:53:53.586 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 12:53:53.587 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:53:53.587 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:53:53.588 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:53:53.619 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:53:53.619603400
+2023-11-15 12:53:53.620 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:53:53.620 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000}]}
+2023-11-15 12:53:55.851 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:53:55.851305700
+2023-11-15 12:53:55.851 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:53:55.852 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:53:55.852 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:53:55.852 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:53:55.853 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test001'","orderby":["test001","testdocno"]}]
+2023-11-15 12:53:55.853 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:53:55.854 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:53:55.854 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:53:55.860 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:53:55.860250900
+2023-11-15 12:53:55.860 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:53:55.861 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000}]}
+2023-11-15 12:53:56.111 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T12:53:56.111350500
+2023-11-15 12:53:56.112 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 12:53:56.112 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 12:53:56.113 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 12:53:56.113 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 12:53:56.114 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test001'"}]
+2023-11-15 12:53:56.115 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 12:53:56.115 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 12:53:56.116 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 12:53:56.126 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T12:53:56.126225600
+2023-11-15 12:53:56.126 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 12:53:56.126 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[null]}
+2023-11-15 13:13:57.391 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:13:57.391094700
+2023-11-15 13:13:57.392 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/insData
+2023-11-15 13:13:57.392 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:13:57.392 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:13:57.392 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:13:57.393 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"test":{"testdocno":"test002","test001":"2023-11-15"},"testdetail":[{"testdetaildocno":"test002","testdetail001":"项次11","testdetail002":"选项1","testdetail003":"2023-11-15"},{"testdetaildocno":"test002","testdetail001":"项次22","testdetail002":"选项2","testdetail003":"2023-11-15"}]}]
+2023-11-15 13:13:57.393 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:13:57.393 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:13:57.394 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:13:57.412 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:13:57.412619700
+2023-11-15 13:13:57.412 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:13:57.413 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据新增成功","payload":null}
+2023-11-15 13:14:03.379 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:14:03.379770600
+2023-11-15 13:14:03.381 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:14:03.381 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:14:03.381 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:14:03.382 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:14:03.382 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 13:14:03.383 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:14:03.383 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:14:03.383 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:14:03.387 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:14:03.387748400
+2023-11-15 13:14:03.388 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:14:03.388 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000},{"id":6,"testdocno":"test002","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025237000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025237000}]}
+2023-11-15 13:14:05.982 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:14:05.982861700
+2023-11-15 13:14:05.983 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:14:05.983 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:14:05.984 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:14:05.984 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:14:05.984 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test001'","orderby":["test001","testdocno"]}]
+2023-11-15 13:14:05.984 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:14:05.984 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:14:05.984 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:14:05.988 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:14:05.988815200
+2023-11-15 13:14:05.988 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:14:05.988 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000}]}
+2023-11-15 13:14:06.250 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:14:06.250978
+2023-11-15 13:14:06.251 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:14:06.252 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:14:06.252 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:14:06.253 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:14:06.254 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test001'"}]
+2023-11-15 13:14:06.254 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:14:06.255 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:14:06.256 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:14:06.265 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:14:06.265491100
+2023-11-15 13:14:06.265 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:14:06.266 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[null]}
+2023-11-15 13:16:28.674 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:16:28.674832100
+2023-11-15 13:16:28.675 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:16:28.675 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:16:28.676 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:16:28.676 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:16:28.676 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 13:16:28.676 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:16:28.677 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:16:28.677 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:16:28.680 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:16:28.680784900
+2023-11-15 13:16:28.681 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:16:28.681 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000},{"id":6,"testdocno":"test002","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025237000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025237000}]}
+2023-11-15 13:16:32.833 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:16:32.833357500
+2023-11-15 13:16:32.833 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:16:32.833 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:16:32.834 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:16:32.834 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:16:32.834 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-16'","orderby":["test001","testdocno"]}]
+2023-11-15 13:16:32.834 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:16:32.834 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:16:32.835 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:16:32.839 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:16:32.839343700
+2023-11-15 13:16:32.839 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:16:32.840 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[]}
+2023-11-15 13:16:35.295 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:16:35.295658100
+2023-11-15 13:16:35.295 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:16:35.295 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:16:35.296 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:16:35.296 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:16:35.296 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-14'","orderby":["test001","testdocno"]}]
+2023-11-15 13:16:35.296 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:16:35.297 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:16:35.297 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:16:35.300 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:16:35.300645600
+2023-11-15 13:16:35.300 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:16:35.300 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[]}
+2023-11-15 13:16:37.192 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:16:37.192854300
+2023-11-15 13:16:37.193 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:16:37.194 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:16:37.194 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:16:37.194 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:16:37.194 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 13:16:37.194 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:16:37.194 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:16:37.194 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:16:37.198 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:16:37.198974
+2023-11-15 13:16:37.199 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:16:37.199 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000},{"id":6,"testdocno":"test002","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025237000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025237000}]}
+2023-11-15 13:17:11.263 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:17:11.263232100
+2023-11-15 13:17:11.263 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/insData
+2023-11-15 13:17:11.264 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:17:11.264 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:17:11.264 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:17:11.265 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"test":{"testdocno":"test004","test001":"2023-11-15"},"testdetail":[{"testdetaildocno":"test004","testdetail001":"消磁1","testdetail002":"选项2","testdetail003":"2023-11-16"},{"testdetaildocno":"test004","testdetail001":"消磁2-","testdetail002":"选项3","testdetail003":"2023-11-16"},{"testdetaildocno":"test004","testdetail001":"消磁3","testdetail002":"选项1","testdetail003":"2023-11-15"}]}]
+2023-11-15 13:17:11.265 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:17:11.265 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:17:11.265 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:17:11.283 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:17:11.283100200
+2023-11-15 13:17:11.283 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:17:11.283 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据新增成功","payload":null}
+2023-11-15 13:17:16.064 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:17:16.064468100
+2023-11-15 13:17:16.064 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:17:16.065 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:17:16.065 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:17:16.065 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:17:16.066 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 13:17:16.066 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:17:16.066 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:17:16.067 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:17:16.070 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:17:16.070682800
+2023-11-15 13:17:16.071 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:17:16.071 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000},{"id":6,"testdocno":"test002","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025237000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025237000},{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 13:17:17.933 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:17:17.933626900
+2023-11-15 13:17:17.933 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:17:17.933 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:17:17.934 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:17:17.934 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:17:17.934 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test004'","orderby":["test001","testdocno"]}]
+2023-11-15 13:17:17.934 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:17:17.934 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:17:17.934 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:17:17.937 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:17:17.937616900
+2023-11-15 13:17:17.938 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:17:17.938 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 13:17:18.209 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:17:18.209876600
+2023-11-15 13:17:18.209 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:17:18.210 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:17:18.210 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:17:18.210 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:17:18.211 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test004'"}]
+2023-11-15 13:17:18.212 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:17:18.213 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:17:18.213 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:17:18.219 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:17:18.219850300
+2023-11-15 13:17:18.219 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:17:18.220 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":13,"testdetaildocno":"test004","testdetail001":"消磁1","testdetail002":"选项2","testdetail003":1700064000000},{"id":14,"testdetaildocno":"test004","testdetail001":"消磁2-","testdetail002":"选项3","testdetail003":1700064000000},{"id":15,"testdetaildocno":"test004","testdetail001":"消磁3","testdetail002":"选项1","testdetail003":1699977600000}]}
+2023-11-15 13:18:39.443 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:18:39.443607900
+2023-11-15 13:18:39.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:18:39.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:18:39.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:18:39.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:18:39.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test002'","orderby":["test001","testdocno"]}]
+2023-11-15 13:18:39.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:18:39.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:18:39.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:18:39.448 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:18:39.448595
+2023-11-15 13:18:39.448 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:18:39.449 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":6,"testdocno":"test002","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025237000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025237000}]}
+2023-11-15 13:18:39.714 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:18:39.714488900
+2023-11-15 13:18:39.715 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:18:39.715 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:18:39.715 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:18:39.716 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:18:39.716 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test002'"}]
+2023-11-15 13:18:39.716 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:18:39.716 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:18:39.716 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:18:39.720 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:18:39.720468700
+2023-11-15 13:18:39.720 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:18:39.721 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":11,"testdetaildocno":"test002","testdetail001":"项次11","testdetail002":"选项1","testdetail003":1699977600000},{"id":12,"testdetaildocno":"test002","testdetail001":"项次22","testdetail002":"选项2","testdetail003":1699977600000}]}
+2023-11-15 13:18:45.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:18:45.444863
+2023-11-15 13:18:45.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:18:45.444 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:18:45.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:18:45.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:18:45.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test004'","orderby":["test001","testdocno"]}]
+2023-11-15 13:18:45.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:18:45.445 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:18:45.446 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:18:45.450 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:18:45.450659600
+2023-11-15 13:18:45.450 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:18:45.451 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 13:18:45.807 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:18:45.807108100
+2023-11-15 13:18:45.808 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:18:45.808 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:18:45.809 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:18:45.809 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:18:45.809 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test004'"}]
+2023-11-15 13:18:45.809 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:18:45.810 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:18:45.810 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:18:45.814 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:18:45.813545
+2023-11-15 13:18:45.814 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:18:45.814 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":13,"testdetaildocno":"test004","testdetail001":"消磁1","testdetail002":"选项2","testdetail003":1700064000000},{"id":14,"testdetaildocno":"test004","testdetail001":"消磁2-","testdetail002":"选项3","testdetail003":1700064000000},{"id":15,"testdetaildocno":"test004","testdetail001":"消磁3","testdetail002":"选项1","testdetail003":1699977600000}]}
+2023-11-15 13:52:34.428 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:52:34.428479
+2023-11-15 13:52:34.428 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:52:34.429 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:52:34.429 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:52:34.429 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:52:34.429 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test004'","orderby":["test001","testdocno"]}]
+2023-11-15 13:52:34.430 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:52:34.430 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:52:34.430 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:52:34.435 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:52:34.435685100
+2023-11-15 13:52:34.436 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:52:34.436 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 13:52:34.677 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:52:34.677865300
+2023-11-15 13:52:34.679 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:52:34.680 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:52:34.683 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:52:34.684 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:52:34.684 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test004'"}]
+2023-11-15 13:52:34.685 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:52:34.687 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:52:34.689 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:52:34.716 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:52:34.716949100
+2023-11-15 13:52:34.718 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:52:34.719 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":13,"testdetaildocno":"test004","testdetail001":"消磁1","testdetail002":"选项2","testdetail003":1700064000000},{"id":14,"testdetaildocno":"test004","testdetail001":"消磁2-","testdetail002":"选项3","testdetail003":1700064000000},{"id":15,"testdetaildocno":"test004","testdetail001":"消磁3","testdetail002":"选项1","testdetail003":1699977600000}]}
+2023-11-15 13:53:21.631 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:53:21.631921700
+2023-11-15 13:53:21.632 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:53:21.632 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:53:21.634 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:53:21.634 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:53:21.634 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test004'","orderby":["test001","testdocno"]}]
+2023-11-15 13:53:21.634 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:53:21.635 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:53:21.635 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:53:21.642 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:53:21.642891600
+2023-11-15 13:53:21.643 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:53:21.643 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 13:53:21.850 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:53:21.850284800
+2023-11-15 13:53:21.851 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:53:21.852 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:53:21.855 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:53:21.858 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:53:21.862 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test004'"}]
+2023-11-15 13:53:21.863 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:53:21.867 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:53:21.869 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:53:21.896 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:53:21.896155900
+2023-11-15 13:53:21.896 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:53:21.898 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":13,"testdetaildocno":"test004","testdetail001":"消磁1","testdetail002":"选项2","testdetail003":1700064000000},{"id":14,"testdetaildocno":"test004","testdetail001":"消磁2-","testdetail002":"选项3","testdetail003":1700064000000},{"id":15,"testdetaildocno":"test004","testdetail001":"消磁3","testdetail002":"选项1","testdetail003":1699977600000}]}
+2023-11-15 13:53:49.534 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:53:49.534321400
+2023-11-15 13:53:49.534 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:53:49.535 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:53:49.536 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:53:49.536 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:53:49.537 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test004'","orderby":["test001","testdocno"]}]
+2023-11-15 13:53:49.538 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:53:49.539 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:53:49.540 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:53:49.550 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:53:49.550029800
+2023-11-15 13:53:49.550 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:53:49.551 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 13:53:49.738 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T13:53:49.738523500
+2023-11-15 13:53:49.740 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 13:53:49.741 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 13:53:49.742 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 13:53:49.744 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 13:53:49.746 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test004'"}]
+2023-11-15 13:53:49.747 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 13:53:49.748 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 13:53:49.749 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 13:53:49.759 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T13:53:49.759466200
+2023-11-15 13:53:49.762 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 13:53:49.763 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":13,"testdetaildocno":"test004","testdetail001":"消磁1","testdetail002":"选项2","testdetail003":1700064000000},{"id":14,"testdetaildocno":"test004","testdetail001":"消磁2-","testdetail002":"选项3","testdetail003":1700064000000},{"id":15,"testdetaildocno":"test004","testdetail001":"消磁3","testdetail002":"选项1","testdetail003":1699977600000}]}
+2023-11-15 14:33:45.049 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T14:33:45.049651100
+2023-11-15 14:33:45.050 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 14:33:45.051 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 14:33:45.051 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 14:33:45.052 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 14:33:45.053 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":" testdocno = 'test004'","orderby":["test001","testdocno"]}]
+2023-11-15 14:33:45.054 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 14:33:45.055 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 14:33:45.056 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 14:33:45.069 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T14:33:45.069842400
+2023-11-15 14:33:45.070 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 14:33:45.071 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 14:33:45.508 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T14:33:45.508968500
+2023-11-15 14:33:45.509 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 14:33:45.511 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 14:33:45.511 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 14:33:45.512 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 14:33:45.513 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test","testdetail"],"field":{"testdetail":["id","testdetaildocno","testdetail001","testdetail002","testdetail003"]},"basicInfo":"N","primaryTable":"test","where":" testdocno = 'test004'"}]
+2023-11-15 14:33:45.515 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 14:33:45.515 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 14:33:45.516 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 14:33:45.528 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T14:33:45.528464300
+2023-11-15 14:33:45.528 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 14:33:45.529 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":13,"testdetaildocno":"test004","testdetail001":"消磁1","testdetail002":"选项2","testdetail003":1700064000000},{"id":14,"testdetaildocno":"test004","testdetail001":"消磁2-","testdetail002":"选项3","testdetail003":1700064000000},{"id":15,"testdetaildocno":"test004","testdetail001":"消磁3","testdetail002":"选项1","testdetail003":1699977600000}]}
+2023-11-15 14:33:48.308 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T14:33:48.308301300
+2023-11-15 14:33:48.309 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/delData
+2023-11-15 14:33:48.311 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 14:33:48.312 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 14:33:48.313 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 14:33:48.314 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["testdetail"],"testdetail":[{"id":14}]}]
+2023-11-15 14:33:48.315 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 14:33:48.316 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 14:33:48.317 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 14:33:48.397 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T14:33:48.397513100
+2023-11-15 14:33:48.398 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 14:33:48.399 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据删除成功","payload":null}
+2023-11-15 14:36:26.244 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T14:36:26.244477500
+2023-11-15 14:36:26.245 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 14:36:26.245 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 14:36:26.246 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 14:36:26.246 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 14:36:26.247 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 14:36:26.247 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 14:36:26.248 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 14:36:26.248 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 14:36:26.253 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T14:36:26.253453400
+2023-11-15 14:36:26.253 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 14:36:26.253 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000},{"id":6,"testdocno":"test002","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025237000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025237000},{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 14:36:29.599 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T14:36:29.599985500
+2023-11-15 14:36:29.601 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/delData
+2023-11-15 14:36:29.601 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 14:36:29.602 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 14:36:29.603 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 14:36:29.604 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"testdetail":[{"id":7}]}]
+2023-11-15 14:36:29.604 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 14:36:29.604 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 14:36:29.605 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 14:36:29.640 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T14:36:29.640900700
+2023-11-15 14:36:29.641 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 14:36:29.642 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":500,"inform":null,"msg":"数据删除失败:java.lang.NullPointerException: Cannot invoke \"com.alibaba.fastjson2.JSONArray.size()\" because \"tablex\" is null","payload":null}
+2023-11-15 14:37:09.017 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T14:37:09.017999700
+2023-11-15 14:37:09.018 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-11-15 14:37:09.019 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 14:37:09.019 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 14:37:09.020 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 14:37:09.020 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"field":{"test":["id","testdocno","test001"]},"basicInfo":"Y","primaryTable":"test","where":"1 = 1 and test001 = '2023-11-15'","orderby":["test001","testdocno"]}]
+2023-11-15 14:37:09.021 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 14:37:09.021 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 14:37:09.022 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 14:37:09.028 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T14:37:09.028625900
+2023-11-15 14:37:09.029 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 14:37:09.029 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据查询成功","payload":[{"id":5,"testdocno":"test001","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700024029000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700024029000},{"id":6,"testdocno":"test002","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025237000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025237000},{"id":7,"testdocno":"test004","test001":1699977600000,"ownerid":10,"ownerusername":"admin","ownername":"管理员","createtime":1700025431000,"updateid":10,"updateusername":"admin","updatename":"管理员","updatetime":1700025431000}]}
+2023-11-15 14:37:10.490 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-11-15T14:37:10.490788600
+2023-11-15 14:37:10.490 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/delData
+2023-11-15 14:37:10.490 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-11-15 14:37:10.491 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 127.0.0.1
+2023-11-15 14:37:10.491 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json;charset=UTF-8
+2023-11-15 14:37:10.491 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["test"],"test":[{"id":7}]}]
+2023-11-15 14:37:10.491 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-11-15 14:37:10.492 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-11-15 14:37:10.492 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-11-15 14:37:10.506 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-11-15T14:37:10.506778100
+2023-11-15 14:37:10.506 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-11-15 14:37:10.507 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"inform":null,"msg":"数据删除成功","payload":null}
+2023-11-15 19:49:28.324 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-11-15 19:49:28.352 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-15 19:49:28.389 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-11-15 19:49:28.390 [flowable-cmmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine cmmn
+2023-11-15 19:49:28.390 [flowable-cmmn-acquire-timer-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:131 - stopped async job due acquisition for engine cmmn
+2023-11-15 19:49:28.407 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-11-15 19:49:28.408 [flowable-bpmn-acquire-async-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:143 - stopped async job due acquisition for engine bpmn
+2023-11-15 19:49:28.408 [flowable-bpmn-acquire-timer-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:131 - stopped async job due acquisition for engine bpmn
+2023-11-15 19:49:28.867 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-11-15 19:49:28.886 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.

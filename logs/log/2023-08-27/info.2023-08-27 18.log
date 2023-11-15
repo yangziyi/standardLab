@@ -1,0 +1,219 @@
+2023-08-27 18:16:15.834 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 5496 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-27 18:16:15.838 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 18:16:16.849 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-27 18:16:16.852 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-27 18:16:16.897 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2023-08-27 18:16:17.959 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-27 18:16:17.959 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 2054 ms
+2023-08-27 18:16:19.950 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d75940, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e5cbcfe, org.springframework.security.web.context.SecurityContextHolderFilter@54ed249f, org.springframework.security.web.header.HeaderWriterFilter@7bad18f5, org.springframework.web.filter.CorsFilter@3f322610, org.springframework.security.web.authentication.logout.LogoutFilter@452e2210, lab.base.config.security.JwtLoginFilter@6773bab2, lab.base.config.security.JwtAuthenticationFilter@1055d261, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c1df0e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b7a4c83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d758472, org.springframework.security.web.access.ExceptionTranslationFilter@7771c4e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5daa621b]
+2023-08-27 18:16:21.016 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-27 18:16:21.027 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-27 18:16:21.037 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-27 18:16:21.089 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-27 18:16:21.154 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-27 18:16:21.170 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 6.011 seconds (process running for 6.649)
+2023-08-27 18:17:14.459 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 18:17:14.459 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-27 18:17:14.463 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 3 ms
+2023-08-27 18:17:14.649 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-27 18:17:15.032 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@517f1777
+2023-08-27 18:17:15.035 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-27 18:17:15.104 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T18:17:15.104224200
+2023-08-27 18:17:15.104 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/sql/updTable
+2023-08-27 18:17:15.104 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 18:17:15.105 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 18:17:15.106 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 18:17:15.106 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.updTablePO@34904a37]
+2023-08-27 18:17:15.106 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 18:17:15.106 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 18:17:15.107 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 18:19:42.497 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T18:19:42.497540200
+2023-08-27 18:19:42.498 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/sql/updTable
+2023-08-27 18:19:42.498 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 18:19:42.499 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 18:19:42.499 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 18:19:42.500 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.updTablePO@530b0c5e]
+2023-08-27 18:19:42.501 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 18:19:42.501 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 18:19:42.501 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 18:19:49.967 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T18:19:49.967662400
+2023-08-27 18:19:49.968 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/sql/updTable
+2023-08-27 18:19:49.969 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 18:19:49.969 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 18:19:49.969 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 18:19:49.970 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.updTablePO@7e862f88]
+2023-08-27 18:19:49.970 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 18:19:49.970 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 18:19:49.971 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 18:20:21.025 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-27 18:20:21.029 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 18:20:21.174 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-27 18:20:21.183 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-08-27 18:20:28.922 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 12244 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-27 18:20:28.926 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 18:20:29.945 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-27 18:20:29.949 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-27 18:20:29.993 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2023-08-27 18:20:31.110 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-27 18:20:31.111 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 2119 ms
+2023-08-27 18:20:33.515 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6773bab2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1055d261, org.springframework.security.web.context.SecurityContextHolderFilter@3c1df0e9, org.springframework.security.web.header.HeaderWriterFilter@64e3bc2, org.springframework.web.filter.CorsFilter@1e477944, org.springframework.security.web.authentication.logout.LogoutFilter@684f7f1c, lab.base.config.security.JwtLoginFilter@2d758472, lab.base.config.security.JwtAuthenticationFilter@7615666e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@768e40af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@165824f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c49e434, org.springframework.security.web.access.ExceptionTranslationFilter@63062eea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fcedf83]
+2023-08-27 18:20:34.587 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-27 18:20:34.597 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-27 18:20:34.608 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-27 18:20:34.658 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-27 18:20:34.722 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-27 18:20:34.738 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 6.512 seconds (process running for 7.295)
+2023-08-27 18:20:45.316 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 18:20:45.317 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-27 18:20:45.319 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-27 18:20:45.536 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-27 18:20:45.874 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ecdca8
+2023-08-27 18:20:45.877 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-27 18:20:45.934 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T18:20:45.934167400
+2023-08-27 18:20:45.934 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/sql/updTable
+2023-08-27 18:20:45.935 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 18:20:45.936 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 18:20:45.936 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 18:20:45.937 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.updTablePO@42b214b3]
+2023-08-27 18:20:45.937 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 18:20:45.937 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 18:20:45.938 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 18:21:37.204 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-27 18:21:37.207 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 18:21:37.333 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-27 18:21:37.339 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-08-27 18:21:44.466 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 2272 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-27 18:21:44.470 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 18:21:45.471 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-27 18:21:45.474 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-27 18:21:45.514 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2023-08-27 18:21:46.603 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-27 18:21:46.604 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 2071 ms
+2023-08-27 18:21:48.646 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d758472, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7615666e, org.springframework.security.web.context.SecurityContextHolderFilter@768e40af, org.springframework.security.web.header.HeaderWriterFilter@4714f447, org.springframework.web.filter.CorsFilter@1e477944, org.springframework.security.web.authentication.logout.LogoutFilter@5e0bba2f, lab.base.config.security.JwtLoginFilter@c49e434, lab.base.config.security.JwtAuthenticationFilter@32b1e906, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4511146f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c16561a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33e6bd36, org.springframework.security.web.access.ExceptionTranslationFilter@4407fea2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@187df588]
+2023-08-27 18:21:49.793 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-27 18:21:49.803 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-27 18:21:49.814 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-27 18:21:49.874 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-27 18:21:49.952 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-27 18:21:49.968 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 6.175 seconds (process running for 6.848)
+2023-08-27 18:22:06.896 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 18:22:06.897 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-27 18:22:06.899 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 1 ms
+2023-08-27 18:22:07.087 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-27 18:22:07.423 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@517f1777
+2023-08-27 18:22:07.426 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-27 18:22:07.481 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T18:22:07.481537800
+2023-08-27 18:22:07.483 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/sql/updTable
+2023-08-27 18:22:07.484 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 18:22:07.485 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 18:22:07.486 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 18:22:07.486 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.updTablePO@34904a37]
+2023-08-27 18:22:07.486 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 18:22:07.487 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 18:22:07.487 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 18:22:08.409 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:85 - 请求结束时间 : 2023-08-27T18:22:08.409410300
+2023-08-27 18:22:08.409 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求耗时 : 0秒
+2023-08-27 18:22:08.409 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:88 - 请求返回 : {"code":200,"msg":"表单t_test修改成功"}
+2023-08-27 18:30:47.086 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-27 18:30:47.090 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 18:30:47.221 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-27 18:30:47.229 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-08-27 18:30:51.962 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 18208 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-27 18:30:51.967 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 18:30:53.075 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-27 18:30:53.078 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-27 18:30:53.119 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2023-08-27 18:30:54.309 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-27 18:30:54.310 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 2261 ms
+2023-08-27 18:30:56.684 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d432d56, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@147ad4bb, org.springframework.security.web.context.SecurityContextHolderFilter@15a2fddd, org.springframework.security.web.header.HeaderWriterFilter@6ed7c178, org.springframework.web.filter.CorsFilter@1716c037, org.springframework.security.web.authentication.logout.LogoutFilter@326dbe25, lab.base.config.security.JwtLoginFilter@bd703bb, lab.base.config.security.JwtAuthenticationFilter@2a9565d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18c0f025, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@684f7f1c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e38d44e, org.springframework.security.web.access.ExceptionTranslationFilter@13dc383b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42012093]
+2023-08-27 18:30:57.722 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-27 18:30:57.735 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-27 18:30:57.745 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-27 18:30:57.800 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-27 18:30:57.863 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-27 18:30:57.879 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 6.689 seconds (process running for 7.42)
+2023-08-27 18:31:23.882 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 18:31:23.882 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-27 18:31:23.885 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-27 18:31:24.136 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-27 18:31:24.561 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f3d28f
+2023-08-27 18:31:24.564 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-27 18:31:24.626 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T18:31:24.626700800
+2023-08-27 18:31:24.628 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-27 18:31:24.628 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 18:31:24.628 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 18:31:24.629 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 18:31:24.629 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.userPO@42a63666]
+2023-08-27 18:31:24.629 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 18:31:24.630 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 18:31:24.631 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 18:31:24.665 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:85 - 请求结束时间 : 2023-08-27T18:31:24.665304500
+2023-08-27 18:31:24.666 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求耗时 : 0秒
+2023-08-27 18:31:24.666 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:88 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"},{"end":0,"id":"19","name":"杨子亿","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"yzy"},{"end":0,"id":"20","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"test1246gds"},{"end":0,"id":"21","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"testqwr"},{"end":0,"id":"22","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"test7956"},{"end":0,"id":"23","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"testtyui"},{"end":0,"id":"24","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"testt347436"},{"end":0,"id":"25","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"testtgjdfh"}]}
+2023-08-27 18:33:43.106 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-27 18:33:43.109 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 18:33:43.126 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-27 18:33:43.132 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-08-27 18:33:50.273 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 1052 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-27 18:33:50.278 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 18:33:51.305 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-27 18:33:51.308 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-27 18:33:51.350 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2023-08-27 18:33:52.447 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-27 18:33:52.448 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 2100 ms
+2023-08-27 18:33:54.687 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c25123e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f5c0eda, org.springframework.security.web.context.SecurityContextHolderFilter@5e0bba2f, org.springframework.security.web.header.HeaderWriterFilter@18c0f025, org.springframework.web.filter.CorsFilter@5d2e6f62, org.springframework.security.web.authentication.logout.LogoutFilter@43a8bd35, lab.base.config.security.JwtLoginFilter@5e66733b, lab.base.config.security.JwtAuthenticationFilter@3694461d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52f118aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31cd0efa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72641613, org.springframework.security.web.access.ExceptionTranslationFilter@5b657342, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d432d56]
+2023-08-27 18:33:55.745 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-27 18:33:55.759 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-27 18:33:55.771 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-27 18:33:55.819 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-27 18:33:55.887 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-27 18:33:55.905 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 6.384 seconds (process running for 7.088)
+2023-08-27 18:34:18.611 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 18:34:18.612 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-27 18:34:18.614 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-27 18:34:18.835 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-27 18:34:19.240 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@8606f78
+2023-08-27 18:34:19.242 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-27 18:34:19.297 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T18:34:19.297110500
+2023-08-27 18:34:19.298 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-27 18:34:19.299 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 18:34:19.299 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 18:34:19.299 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 18:34:19.300 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.userPO@5f9c8c1b]
+2023-08-27 18:34:19.300 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 18:34:19.300 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 18:34:19.301 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 18:34:19.331 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:85 - 请求结束时间 : 2023-08-27T18:34:19.331020700
+2023-08-27 18:34:19.332 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求耗时 : 0秒
+2023-08-27 18:34:19.333 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:88 - 请求返回 : {"code":200,"payload":[{"end":0,"id":"10","name":"管理员","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"admin"},{"end":0,"id":"11","name":"测试人员","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"test"},{"end":0,"id":"12","name":"kefu","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"客服"},{"end":0,"id":"13","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu"},{"end":0,"id":"14","name":"客服","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"kefu01"},{"end":0,"id":"15","name":"采样确认人","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"reply"},{"end":0,"id":"16","name":"复核","ownerid":0,"password":"123456","start":0,"state":0,"updateid":0,"username":"report"},{"end":0,"id":"19","name":"杨子亿","ownerid":0,"password":"E10ADC3949BA59ABBE56E057F20F883E","start":0,"state":0,"updateid":0,"username":"yzy"},{"end":0,"id":"20","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"test1246gds"},{"end":0,"id":"21","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"testqwr"},{"end":0,"id":"22","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"test7956"},{"end":0,"id":"23","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"testtyui"},{"end":0,"id":"24","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"testt347436"},{"end":0,"id":"25","name":"测试","ownerid":0,"password":"96E79218965EB72C92A549DD5A330112","start":0,"state":0,"updateid":0,"username":"testtgjdfh"}]}
+2023-08-27 18:35:55.786 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T18:35:55.786205300
+2023-08-27 18:35:55.787 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/user/updUser
+2023-08-27 18:35:55.788 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 18:35:55.788 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 18:35:55.789 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 18:35:55.789 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.userPO2@2527e73]
+2023-08-27 18:35:55.790 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 18:35:55.790 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 18:35:55.791 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 20:15:39.166 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T20:15:39.166363400
+2023-08-27 20:15:39.167 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/user/updUser
+2023-08-27 20:15:39.168 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 20:15:39.169 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 20:15:39.169 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 20:15:39.170 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.userPO2@2502f449]
+2023-08-27 20:15:39.171 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 20:15:39.171 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 20:15:39.172 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 20:15:59.665 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T20:15:59.665224800
+2023-08-27 20:15:59.666 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/sql/updTable
+2023-08-27 20:15:59.666 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 20:15:59.667 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 20:15:59.667 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 20:15:59.668 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.updTablePO@fa44f1c]
+2023-08-27 20:15:59.668 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 20:15:59.669 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 20:15:59.670 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 20:22:27.042 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-27 20:22:27.046 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 20:22:27.169 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-27 20:22:27.174 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.

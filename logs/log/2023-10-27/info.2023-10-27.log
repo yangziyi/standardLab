@@ -1,0 +1,108 @@
+2023-10-27 01:14:33.220 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-10-27 01:14:33.225 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-27 01:14:33.229 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-27 01:14:33.229 [flowable-cmmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine cmmn
+2023-10-27 01:14:33.235 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-27 01:14:33.236 [flowable-bpmn-acquire-timer-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:131 - stopped async job due acquisition for engine bpmn
+2023-10-27 01:14:33.374 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-10-27 01:14:33.378 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.
+2023-10-27 15:07:55.232 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 23228 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-10-27 15:07:55.241 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-10-27 15:07:57.482 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 15:07:57.490 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-27 15:07:57.589 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+2023-10-27 15:07:59.915 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-10-27 15:07:59.916 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 4563 ms
+2023-10-27 15:08:10.628 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a08e41b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e08d871, org.springframework.security.web.context.SecurityContextHolderFilter@32f45e15, org.springframework.security.web.header.HeaderWriterFilter@15fd3088, org.springframework.web.filter.CorsFilter@4ebb7bab, org.springframework.security.web.authentication.logout.LogoutFilter@48da5106, lab.base.config.security.JwtLoginFilter@33845e3d, lab.base.config.security.JwtAuthenticationFilter@7e615c6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ef7ae2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bcf2c64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3662c887, org.springframework.security.web.access.ExceptionTranslationFilter@1701beb3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34ab398b]
+2023-10-27 15:08:11.331 [main] INFO  org.flowable.spring.boot.app.AppEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-27 15:08:11.672 [main] INFO  org.flowable.spring.boot.ProcessEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-27 15:08:12.817 [main] INFO  o.flowable.spring.boot.cmmn.CmmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-27 15:08:13.325 [main] INFO  org.flowable.spring.boot.dmn.DmnEngineAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-27 15:08:13.497 [main] INFO  o.f.s.boot.eventregistry.EventRegistryAutoConfiguration.discoverDeploymentResources:104 - No deployment resources were found for autodeployment
+2023-10-27 15:08:13.665 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1084 - Found 5 Engine Configurators in total:
+2023-10-27 15:08:13.665 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-27 15:08:13.666 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-27 15:08:13.666 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-27 15:08:13.666 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-27 15:08:13.667 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.initConfigurators:1086 - class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-27 15:08:13.667 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-27 15:08:13.677 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-27 15:08:13.695 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-27 15:08:13.701 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-27 15:08:13.707 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsBeforeInit:1112 - Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-27 15:08:13.792 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-10-27 15:08:14.412 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@37e15055
+2023-10-27 15:08:14.415 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-10-27 15:08:16.008 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2023-10-27 15:08:16.645 [main] INFO  org.flowable.engine.impl.ProcessEngineImpl.<init>:89 - ProcessEngine default created
+2023-10-27 15:08:16.701 [main] INFO  org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd.execute:43 - Total of v5 deployments found: 0
+2023-10-27 15:08:16.715 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+2023-10-27 15:08:17.629 [main] INFO  liquibase.changelog.log:37 - Reading from test.FLW_EV_DATABASECHANGELOG
+2023-10-27 15:08:17.642 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-27 15:08:17.695 [main] INFO  org.flowable.eventregistry.impl.EventRegistryEngineImpl.<init>:53 - EventRegistryEngine default created
+2023-10-27 15:08:17.697 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:150000)
+2023-10-27 15:08:17.719 [main] INFO  org.flowable.idm.engine.impl.IdmEngineImpl.<init>:52 - IdmEngine default created
+2023-10-27 15:08:17.722 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2023-10-27 15:08:17.788 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_DMN_DATABASECHANGELOG
+2023-10-27 15:08:17.792 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-27 15:08:17.813 [main] INFO  org.flowable.dmn.engine.impl.DmnEngineImpl.<init>:55 - DmnEngine default created
+2023-10-27 15:08:17.815 [main] INFO  org.flowable.app.spring.SpringAppEngineConfiguration.configuratorsAfterInit:1119 - Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2023-10-27 15:08:18.059 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_CMMN_DATABASECHANGELOG
+2023-10-27 15:08:18.062 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-27 15:08:18.099 [main] INFO  org.flowable.cmmn.engine.impl.CmmnEngineImpl.<init>:72 - CmmnEngine default created
+2023-10-27 15:08:18.143 [main] INFO  liquibase.changelog.log:37 - Reading from test.ACT_APP_DATABASECHANGELOG
+2023-10-27 15:08:18.146 [main] INFO  liquibase.executor.log:37 - Changelog query completed.
+2023-10-27 15:08:18.153 [main] INFO  org.flowable.app.engine.impl.AppEngineImpl.<init>:48 - AppEngine default created
+2023-10-27 15:08:19.939 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-27 15:08:19.956 [Thread-3] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine cmmn
+2023-10-27 15:08:19.957 [main] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.start:101 - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-27 15:08:19.957 [Thread-1] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:106 - starting to acquire async jobs due for engine cmmn
+2023-10-27 15:08:19.958 [Thread-2] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:109 - starting to acquire async jobs due for engine cmmn
+2023-10-27 15:08:19.966 [Thread-6] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:63 - starting to reset expired jobs for engine bpmn
+2023-10-27 15:08:19.966 [Thread-5] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:109 - starting to acquire async jobs due for engine bpmn
+2023-10-27 15:08:19.985 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-10-27 15:08:20.007 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-10-27 15:08:20.021 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-10-27 15:08:20.076 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-10-27 15:08:20.166 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8080 (http)
+2023-10-27 15:08:20.200 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 26.229 seconds (process running for 27.559)
+2023-10-27 15:08:34.384 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-27 15:08:34.386 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-10-27 15:08:34.392 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 6 ms
+2023-10-27 15:08:36.756 [XNIO-1 task-5] INFO  org.springdoc.api.AbstractOpenApiResource.getOpenApi:371 - Init duration for springdoc-openapi is: 1290 ms
+2023-10-27 15:22:44.124 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-10-27T15:22:44.124674600
+2023-10-27 15:22:44.125 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/insData
+2023-10-27 15:22:44.126 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-10-27 15:22:44.127 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-10-27 15:22:44.128 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-10-27 15:22:44.130 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"type":"insert","table":["t_outkey"],"t_outkey":[{"tabledocno":"t_field","out_tabledocno":"t_table","fields":"tableid","out_fields":"id"}]}]
+2023-10-27 15:22:44.132 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-10-27 15:22:44.133 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-10-27 15:22:44.133 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-10-27 15:22:45.168 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-10-27T15:22:45.168817400
+2023-10-27 15:22:45.169 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 1秒
+2023-10-27 15:22:45.170 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"msg":"数据新增成功"}
+2023-10-27 15:31:24.635 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-10-27T15:31:24.635258600
+2023-10-27 15:31:24.637 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8080/sql/selData
+2023-10-27 15:31:24.637 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-10-27 15:31:24.638 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-10-27 15:31:24.638 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-10-27 15:31:24.640 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"table":["t_table","t_field"],"field":{"t_table":["tabledocno","tablename","remark"],"t_field":["id","fielddocno","fielename","tableid"]},"basicInfo":"Y","primaryTable":"t_table","where":"t_table.tabledocno='t_test5'"}]
+2023-10-27 15:31:24.641 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-10-27 15:31:24.641 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-10-27 15:31:24.642 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-10-27 15:31:24.672 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-10-27T15:31:24.672917500
+2023-10-27 15:31:24.674 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-10-27 15:31:24.675 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":500,"msg":"数据查询失败:java.lang.NullPointerException: Cannot invoke \"lab.base.util.RedisUtil.hget(String, String)\" because \"this.RedisUtil\" is null"}
+2023-10-27 16:00:36.497 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-10-27 16:00:36.587 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-27 16:00:36.695 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine cmmn
+2023-10-27 16:00:36.696 [flowable-cmmn-acquire-timer-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:131 - stopped async job due acquisition for engine cmmn
+2023-10-27 16:00:36.697 [flowable-cmmn-acquire-async-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:143 - stopped async job due acquisition for engine cmmn
+2023-10-27 16:00:36.701 [flowable-cmmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine cmmn
+2023-10-27 16:00:36.825 [SpringApplicationShutdownHook] INFO  o.f.job.service.impl.asyncexecutor.AbstractAsyncExecutor.shutdown:158 - Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+2023-10-27 16:00:36.827 [flowable-bpmn-acquire-async-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireAsyncJobsDueRunnable.run:143 - stopped async job due acquisition for engine bpmn
+2023-10-27 16:00:36.912 [flowable-bpmn-acquire-timer-jobs] INFO  o.f.j.s.impl.asyncexecutor.AcquireTimerJobsRunnable.run:131 - stopped async job due acquisition for engine bpmn
+2023-10-27 16:00:36.912 [flowable-bpmn-reset-expired-jobs] INFO  o.f.j.s.impl.asyncexecutor.ResetExpiredJobsRunnable.run:90 - stopped resetting expired jobs for engine bpmn
+2023-10-27 16:00:37.343 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-10-27 16:00:37.428 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.

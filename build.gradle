@@ -1,0 +1,108 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.1.1'
+    id 'io.spring.dependency-management' version '1.0.7.RELEASE'
+}
+
+group 'labPro'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 17
+
+repositories {
+    maven {
+        url "https://maven.aliyun.com/repository/public"
+    }
+    mavenLocal()
+    //mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    //springboot
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.1.1'
+    implementation ('org.springframework.boot:spring-boot-starter-web:3.1.1') {
+        exclude module: "spring-boot-starter-tomcat"
+    }
+
+    //springboot starter test
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '3.1.1'
+
+    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+
+    //spring security
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '3.1.1'
+
+    //spring-aop
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '3.1.1'
+
+    //Undertow
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-undertow', version: '3.1.1'
+
+    //freemarker
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version: '3.1.1'
+
+    //redis
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '3.1.1'
+
+    //mysql
+    implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.33'
+
+    //lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.28'
+
+    //mybatis
+    implementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '3.0.2'
+
+    //mybatisplus
+    implementation group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.5.3.1'
+
+    //fasterxml
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.0-rc3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.15.0-rc3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.15.0-rc3'
+    implementation group: 'com.fasterxml', name: 'classmate', version: '1.5.1'
+
+    //json
+    implementation group: 'org.json', name: 'json', version: '20230227'
+    implementation group: 'com.alibaba', name: 'fastjson', version: '2.0.28'
+    implementation 'net.sf.json-lib:json-lib:2.4:jdk15'
+
+    //logback
+    implementation group: 'ch.qos.logback', name: 'logback-core', version: '1.4.6'
+
+    //poi
+    // https://mvnrepository.com/artifact/org.apache.poi/poi
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.2.3'
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.3'
+
+    //springdoc
+    /*implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.7.0'*/
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.1.0'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-api', version: '2.1.0'
+
+    //jjwt
+    implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.5'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.5'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.5'
+
+    //activiti
+    /*compile group: 'org.activiti', name: 'activiti-spring-boot-starter', version: '7.1.0.M1'
+    compile group: 'org.activiti', name: 'activiti-image-generator', version: '7.1.0.M1'*/
+    //compile group: 'org.activiti', name: 'activiti-spring', version: '7.1.0.M1'
+    //flowable
+    implementation group: 'org.flowable', name: 'flowable-spring-boot-starter', version: '7.0.0'
+
+    //UserAgentUtils
+    implementation group: 'eu.bitwalker', name: 'UserAgentUtils', version: '1.21'
+
+    //slf4j
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.7'
+
+}
+
+configurations {
+    implementation.exclude module: 'spring-boot-starter-tomcat'
+    implementation.exclude module: 'commons-logging'
+}

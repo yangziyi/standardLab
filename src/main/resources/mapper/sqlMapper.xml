@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lab.dao.sqlDao">
+
+    <select id="selTable" resultType="lab.vo.tableVO">
+        select id,tabledocno,tablename,parentid,remark,sqlview,type,
+               ownerid, ownerusername, ownername, createtime,
+               updateid, updateusername, updatename, updatetime
+        from t_table
+        <where>
+            <if test="id != '' and id != null">
+                and id = #{id}
+            </if>
+            <if test="tabledocno != '' and tabledocno != null">
+                and tabledocno like concat('%', #{tabledocno}, '%')
+            </if>
+            <if test="tablename != '' and tablename != null">
+                and tablename like concat('%', #{tablename}, '%')
+            </if>
+        </where>
+    </select>
+
+    <insert id="insT_table" useGeneratedKeys="true" keyProperty="id">
+		insert into t_table (tabledocno,tablename,parentid,remark,sqlview,type,
+                                ownerid, ownerusername, ownername, createtime,
+                                updateid, updateusername, updatename, updatetime)
+		    values (#{tabledocno},#{tablename},#{parentid},#{remark},#{sqlview},#{type},
+                        #{ownerid}, #{updateusername}, #{ownername}, now(),
+                        #{updateid}, #{updateusername}, #{updatename}, now())
+        <!--<selectKey keyProperty="id" order="AFTER" resultType="int">
+            SELECT LAST_INSERT_ID()
+        </selectKey>-->
+    </insert>
+
+    <select id="selField" resultType="lab.vo.fieldVO">
+        select id, tableid, tabledocno, fielddocno, fieldname, type, length, sort, widget,
+            widgetLayout, verify, isdelete, remark,
+            decimals, notNull, primaryKey,
+            increment, defaults,
+            ownerid, ownerusername, ownername, createtime,
+            updateid, updateusername, updatename, updatetime
+        from t_field
+        <where>
+            <if test="id != ''">
+                id = #{id}
+            </if>
+            <if test="tableid != '' and tableid != null">
+                and tableid = #{tableid}
+            </if>
+            <if test="tabledocno != '' and tabledocno != null">
+                and tabledocno = #{tabledocno}
+            </if>
+            <if test="fielddocno != '' and fielddocno != null">
+                and fielddocno = #{fielddocno}
+            </if>
+            <if test="fieldname != '' and fieldname != null">
+                and fieldname = #{fieldname}
+            </if>
+        </where>
+    </select>
+
+    <insert id="insT_field">
+		insert into t_field (tableid, tabledocno, fielddocno, fieldname, type, length, sort, widget,
+		                        widgetLayout, verify, isdelete, remark,
+                                decimals, notNull, primaryKey,
+                                increment, defaults,
+                                ownerid, ownerusername, ownername, createtime,
+                                updateid, updateusername, updatename, updatetime)
+		    values
+        <!--插入多条数据的方式，collection要和Dao里面的@Param内的名字对应，item和index是自己定义的-->
+        <foreach collection="fieldPO" item="list" index="index" separator=",">
+            (#{tableid},#{tabledocno},#{list.fielddocno},#{list.fieldname},#{list.type},#{list.length},#{list.sort},
+                #{list.widget},#{list.widgetLayout},#{list.verify},#{list.isdelete},#{list.remark},
+                #{list.decimals},#{list.notNull},#{list.primaryKey},
+                #{list.increment},#{list.defaults},
+                #{list.ownerid}, #{list.ownerusername}, #{list.ownername}, now(),
+                #{list.updateid}, #{list.updateusername}, #{list.updatename}, now())
+        </foreach>;
+        call ins_generalInfo(#{tableid},#{tabledocno});
+    </insert>
+
+    <insert id="insAlertT_field">
+        insert into t_field (tableid, tabledocno, fielddocno, fieldname, type, length, sort, widget,
+        widgetLayout, verify, isdelete, remark,
+        decimals, notNull, primaryKey,
+        increment, defaults,
+        ownerid, ownerusername, ownername, createtime,
+        updateid, updateusername, updatename, updatetime)
+        values
+            (#{tableid},#{tabledocno},#{fielddocno},
+             #{fieldname},#{type},#{length},#{sort},
+            #{widget},#{widgetLayout},#{verify},#{isdelete},#{remark},
+            #{decimals},#{notNull},#{primaryKey},
+            #{increment},#{defaults},
+            #{ownerid}, #{ownerusername}, #{ownername}, now(),
+            #{updateid}, #{updateusername}, #{updatename}, now())
+    </insert>
+
+    <delete id="delT_table">
+        delete from t_table
+            <where>
+                tabledocno = #{tabledocno}
+            </where>
+    </delete>
+
+    <delete id="delT_field">
+        delete from t_field
+        <where>
+            tabledocno = #{tabledocno}
+        </where>
+    </delete>
+
+    <delete id="delAlertT_field">
+        delete from t_field
+        <where>
+            id = #{id};
+        </where>
+    </delete>
+
+    <update id="executeSQL">
+        ${sql}
+    </update>
+
+    <update id="updT_table">
+        update t_table
+            <set>
+                <if test="tabledocno != null and tabledocno !=''">
+                    tabledocno = #{tabledocno},
+                </if>
+                <if test="tablename != null and tablename !=''">
+                    tablename = #{tablename},
+                </if>
+                <if test="parentid != null and parentid !=''">
+                    parentid = #{parentid},
+                </if>
+                <if test="remark != null and remark !=''">
+                    remark = #{remark},
+                </if>
+                <if test="sqlview != null and sqlview !=''">
+                    sqlview = #{sqlview},
+                </if>
+                <if test="type != null">
+                    type = #{type},
+                </if>
+                <if test="updateid != null">
+                    updateid = #{updateid},
+                </if>
+                <if test="updateusername != null and updateusername !=''">
+                    updateusername = #{updateusername},
+                </if>
+                <if test="updatename != null and updatename !=''">
+                    updatename = #{updatename},
+                </if>
+                updatetime = now()
+            </set>
+            <where>
+                id = #{id}
+            </where>
+    </update>
+
+    <update id="updAlertT_table">
+        update t_table
+        <set>
+            <if test="newTabledocno != null and newTabledocno !=''">
+                tabledocno = #{newTabledocno},
+            </if>
+            <if test="tablename != null and tablename !=''">
+                tablename = #{tablename},
+            </if>
+            <if test="parentid != null and parentid !=''">
+                parentid = #{parentid},
+            </if>
+            <if test="remark != null and remark !=''">
+                remark = #{remark},
+            </if>
+            <if test="sqlview != null and sqlview !=''">
+                sqlview = #{sqlview},
+            </if>
+            <if test="type != null">
+                type = #{type},
+            </if>
+            <if test="updateid != null">
+                updateid = #{updateid},
+            </if>
+            <if test="updateusername != null and updateusername !=''">
+                updateusername = #{updateusername},
+            </if>
+            <if test="updatename != null and updatename !=''">
+                updatename = #{updatename},
+            </if>
+            updatetime = now()
+        </set>
+        <where>
+            id = #{id};
+        </where>
+        <if test="newTabledocno != null and newTabledocno !=''">
+        update t_field
+            <set>
+                tabledocno = #{newTabledocno}
+                <where>
+                    tableid = #{id};
+                </where>
+            </set>
+        </if>
+    </update>
+
+    <update id="updT_field">
+        <foreach item="item" index="index" collection="fieldPO" separator=";">
+            update t_field
+                <set>
+                    <if test="item.tableid != null">
+                        tableid = #{item.tableid},
+                    </if>
+                    <if test="item.tabledocno != null and item.tabledocno !=''">
+                        tabledocno = #{item.tabledocno},
+                    </if>
+                    <if test="item.fielddocno != null and item.fielddocno !=''">
+                        fielddocno = #{item.fielddocno},
+                    </if>
+                    <if test="item.fieldname != null and item.fieldname !=''">
+                        fieldname = #{item.fieldname},
+                    </if>
+                    <if test="item.sort != null and item.sort !=''">
+                        sort = #{item.sort},
+                    </if>
+                    <if test="item.widget != null and item.widget !=''">
+                        widget = #{item.widget},
+                    </if>
+                    <if test="item.widgetLayout != null and item.widgetLayout !=''">
+                        widgetLayout = #{item.widgetLayout},
+                    </if>
+                    <if test="item.verify != null and item.verify !=''">
+                        verify = #{item.verify},
+                    </if>
+                    <if test="item.isdelete != null">
+                        isdelete = #{item.isdelete},
+                    </if>
+                    <if test="item.remark != null and item.remark !=''">
+                        remark = #{item.remark},
+                    </if>
+                    <if test="item.type != null and item.type !=''">
+                        type = #{item.type},
+                    </if>
+                    <if test="item.length != null">
+                        length = #{item.length},
+                    </if>
+                    <if test="item.decimals != null">
+                        decimals = #{item.decimals},
+                    </if>
+                    <if test="item.notNull != null and item.notNull !=''">
+                        notNull = #{item.notNull},
+                    </if>
+                    <if test="item.primaryKey != null and item.primaryKey !=''">
+                        primaryKey = #{item.primaryKey},
+                    </if>
+                    <if test="item.increment != null and item.increment !=''">
+                        increment = #{item.increment},
+                    </if>
+                    <if test="item.defaults != null and item.defaults !=''">
+                        defaults = #{item.defaults},
+                    </if>
+                    <if test="updateid != null">
+                        updateid = #{updateid},
+                    </if>
+                    <if test="updateusername != null and updateusername !=''">
+                        updateusername = #{updateusername},
+                    </if>
+                    <if test="updatename != null and updatename !=''">
+                        updatename = #{updatename},
+                    </if>
+                    updatetime = now()
+                </set>
+                <where>
+                    id = #{item.id}
+                </where>
+        </foreach>
+    </update>
+
+    <update id="updAlertT_field">
+        update t_field
+        <set>
+            <if test="tableid != null">
+                tableid = #{tableid},
+            </if>
+            <if test="tabledocno != null and tabledocno !=''">
+                tabledocno = #{tabledocno},
+            </if>
+            <if test="newFielddocno != null and newFielddocno !=''">
+                fielddocno = #{newFielddocno},
+            </if>
+            <if test="fieldname != null and fieldname !=''">
+                fieldname = #{fieldname},
+            </if>
+            <if test="sort != null and sort !=''">
+                sort = #{sort},
+            </if>
+            <if test="widget != null and widget !=''">
+                widget = #{widget},
+            </if>
+            <if test="widgetLayout != null and widgetLayout !=''">
+                widgetLayout = #{widgetLayout},
+            </if>
+            <if test="verify != null and verify !=''">
+                verify = #{verify},
+            </if>
+            <if test="isdelete != null">
+                isdelete = #{isdelete},
+            </if>
+            <if test="remark != null and remark !=''">
+                remark = #{remark},
+            </if>
+            <if test="type != null and type !=''">
+                type = #{type},
+            </if>
+            <if test="length != null">
+                length = #{length},
+            </if>
+            <if test="decimals != null">
+                decimals = #{decimals},
+            </if>
+            <if test="notNull != null and notNull !=''">
+                notNull = #{notNull},
+            </if>
+            <if test="primaryKey != null and primaryKey !=''">
+                primaryKey = #{primaryKey},
+            </if>
+            <if test="increment != null and increment !=''">
+                increment = #{increment},
+            </if>
+            <if test="defaults != null and defaults !=''">
+                defaults = #{defaults},
+            </if>
+            <if test="updateid != null">
+                updateid = #{updateid},
+            </if>
+            <if test="updateusername != null and updateusername !=''">
+                updateusername = #{updateusername},
+            </if>
+            <if test="updatename != null and updatename !=''">
+                updatename = #{updatename},
+            </if>
+            updatetime = now()
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>
+
+    <update id="dropTable">
+        drop table ${tabledocno}
+    </update>
+
+    <insert id="insData">
+        ${sql}
+    </insert>
+
+    <update id="updData">
+        <foreach collection="list" item="item" index="index" separator=";">
+            ${item}
+        </foreach>
+    </update>
+
+    <delete id="delData">
+        <foreach collection="list" item="item" index="index" separator=";">
+            ${item}
+        </foreach>
+    </delete>
+
+    <select id="selData" resultType="java.util.LinkedHashMap">
+        ${sql}
+    </select>
+
+    <insert id="insOutkey">
+        insert into t_outkey (tabledocno,outTabledocno,field,outField,
+        ownerid, ownerusername, ownername, createtime,
+        updateid, updateusername, updatename, updatetime)
+        values (#{tabledocno},#{outTabledocno},#{field},#{outField},
+        #{ownerid}, #{updateusername}, #{ownername}, now(),
+        #{updateid}, #{updateusername}, #{updatename}, now())
+    </insert>
+
+    <delete id="delOutkey">
+        delete from t_outkey
+        <where>
+            id = #{id}
+        </where>
+    </delete>
+
+    <update id="updOutkey">
+        update t_outkey
+        <set>
+            <if test="tabledocno != null and tabledocno !=''">
+                tabledocno = #{tabledocno},
+            </if>
+            <if test="outTabledocno != null and outTabledocno !=''">
+                outTabledocno = #{outTabledocno},
+            </if>
+            <if test="field != null and field !=''">
+                field = #{field},
+            </if>
+            <if test="outField != null and outField !=''">
+                outField = #{outField},
+            </if>
+            <if test="updateid != null">
+                updateid = #{updateid},
+            </if>
+            <if test="updateusername != null and updateusername !=''">
+                updateusername = #{updateusername},
+            </if>
+            <if test="updatename != null and updatename !=''">
+                updatename = #{updatename},
+            </if>
+            updatetime = now()
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>
+
+    <select id="selOutkey" resultType="lab.vo.outkeyVO">
+        select id,tabledocno,outTabledocno,field,outField
+            from t_outkey
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="tabledocno != '' and tabledocno != null">
+                and tabledocno = #{tabledocno}
+            </if>
+        </where>
+    </select>
+</mapper>

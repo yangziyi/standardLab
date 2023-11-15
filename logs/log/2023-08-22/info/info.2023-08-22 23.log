@@ -1,0 +1,32 @@
+2023-08-22 23:45:52.953 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 9152 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-22 23:45:52.957 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-22 23:45:53.846 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-22 23:45:53.849 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-22 23:45:53.886 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2023-08-22 23:45:54.870 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-22 23:45:54.871 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 1850 ms
+2023-08-22 23:45:56.792 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b06dc57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5af641d3, org.springframework.security.web.context.SecurityContextHolderFilter@61b76a7d, org.springframework.security.web.header.HeaderWriterFilter@2ab39942, org.springframework.web.filter.CorsFilter@915d7c4, org.springframework.security.web.authentication.logout.LogoutFilter@57fc6759, lab.base.config.security.JwtLoginFilter@14e83c9d, lab.base.config.security.JwtAuthenticationFilter@744db9fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70bc9070, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d202dc4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59043741, org.springframework.security.web.access.ExceptionTranslationFilter@7a569672, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@556a6320]
+2023-08-22 23:45:57.746 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-22 23:45:57.755 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-22 23:45:57.763 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-22 23:45:57.810 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-22 23:45:57.874 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-22 23:45:57.890 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 5.555 seconds (process running for 6.181)
+2023-08-22 23:46:07.055 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-22 23:46:07.056 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-22 23:46:07.058 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-22 23:46:07.229 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-22T23:46:07.229891
+2023-08-22 23:46:07.230 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/user/selectUser
+2023-08-22 23:46:07.231 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-22 23:46:07.232 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-22 23:46:07.232 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-22 23:46:07.233 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.userPO@38072807]
+2023-08-22 23:46:07.234 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-22 23:46:07.234 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-22 23:46:07.234 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-22 23:46:07.282 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-22 23:46:07.620 [XNIO-1 task-2] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b4146e
+2023-08-22 23:46:07.622 [XNIO-1 task-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-22 23:46:07.662 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:85 - 请求结束时间 : 2023-08-22T23:46:07.662619900
+2023-08-22 23:46:07.663 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求耗时 : 433
+2023-08-22 23:46:07.663 [XNIO-1 task-2] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:88 - 请求返回 : {"code":200,"payload":[{"id":"10","name":"管理员","password":"E10ADC3949BA59ABBE56E057F20F883E","username":"admin"},{"id":"11","name":"测试人员","password":"123456","username":"test"},{"id":"12","name":"kefu","password":"123456","username":"客服"},{"id":"13","name":"客服","password":"123456","username":"kefu"},{"id":"14","name":"客服","password":"123456","username":"kefu01"},{"id":"15","name":"采样确认人","password":"123456","username":"reply"},{"id":"16","name":"复核","password":"123456","username":"report"},{"id":"19","name":"杨子亿","password":"E10ADC3949BA59ABBE56E057F20F883E","username":"yzy"},{"id":"20","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"test1246gds"},{"id":"21","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"testqwr"},{"id":"22","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"test7956"},{"id":"23","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"testtyui"},{"id":"24","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"testt347436"},{"id":"25","name":"测试","password":"96E79218965EB72C92A549DD5A330112","username":"testtgjdfh"}]}

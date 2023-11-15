@@ -1,0 +1,16 @@
+2023-08-31 00:00:04.589 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求开始时间：2023-08-31T00:00:04.589392700
+2023-08-31 00:00:04.595 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求Url : http://localhost:8086/user/updUser
+2023-08-31 00:00:04.596 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求方式 : POST
+2023-08-31 00:00:04.597 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-31 00:00:04.598 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求内容类型 : application/json
+2023-08-31 00:00:04.599 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:62 - 请求参数 : [{"id":"10","ownerid":0,"state":1,"updateid":0}]
+2023-08-31 00:00:04.599 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器 : CHROME8
+2023-08-31 00:00:04.600 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 浏览器版本 : 85.0.4183.83
+2023-08-31 00:00:04.600 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doBefore:66 - 操作系统: WINDOWS_10
+2023-08-31 00:00:04.612 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求结束时间 : 2023-08-31T00:00:04.612918700
+2023-08-31 00:00:04.613 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:87 - 请求耗时 : 0秒
+2023-08-31 00:00:04.613 [XNIO-1 task-4] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:89 - 请求返回 : {"code":200,"msg":"用户null更新成功"}
+2023-08-31 00:01:00.852 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-31 00:01:00.858 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-31 00:01:00.985 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-31 00:01:00.990 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.

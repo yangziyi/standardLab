@@ -1,0 +1,37 @@
+2023-08-27 16:52:58.392 [main] INFO  lab.StandardLabApplication.logStarting:51 - Starting StandardLabApplication using Java 17.0.7 with PID 9392 (F:\IdeaProjects\standardLab\out\production\classes started by yii in F:\IdeaProjects\standardLab)
+2023-08-27 16:52:58.396 [main] INFO  lab.StandardLabApplication.logStartupProfileInfo:634 - No active profile set, falling back to 1 default profile: "default"
+2023-08-27 16:52:59.329 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:291 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-27 16:52:59.333 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:138 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-08-27 16:52:59.376 [main] INFO  o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:208 - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2023-08-27 16:53:00.911 [main] INFO  io.undertow.servlet.log:372 - Initializing Spring embedded WebApplicationContext
+2023-08-27 16:53:00.912 [main] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:291 - Root WebApplicationContext: initialization completed in 2461 ms
+2023-08-27 16:53:03.406 [main] INFO  o.s.security.web.DefaultSecurityFilterChain.<init>:54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@bd703bb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a9565d7, org.springframework.security.web.context.SecurityContextHolderFilter@18c0f025, org.springframework.security.web.header.HeaderWriterFilter@3b780b5c, org.springframework.web.filter.CorsFilter@63262071, org.springframework.security.web.authentication.logout.LogoutFilter@3922b297, lab.base.config.security.JwtLoginFilter@2e38d44e, lab.base.config.security.JwtAuthenticationFilter@6c25123e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a013bdd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e0bba2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f5c0eda, org.springframework.security.web.access.ExceptionTranslationFilter@f310675, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ca0a21f]
+2023-08-27 16:53:04.441 [main] INFO  io.undertow.start:120 - starting server: Undertow - 2.3.7.Final
+2023-08-27 16:53:04.457 [main] INFO  org.xnio.<clinit>:95 - XNIO version 3.8.8.Final
+2023-08-27 16:53:04.469 [main] INFO  org.xnio.nio.<clinit>:58 - XNIO NIO Implementation Version 3.8.8.Final
+2023-08-27 16:53:04.525 [main] INFO  org.jboss.threads.<clinit>:55 - JBoss Threads version 3.5.0.Final
+2023-08-27 16:53:04.592 [main] INFO  o.s.boot.web.embedded.undertow.UndertowWebServer.start:121 - Undertow started on port(s) 8086 (http)
+2023-08-27 16:53:04.607 [main] INFO  lab.StandardLabApplication.logStarted:57 - Started StandardLabApplication in 7.03 seconds (process running for 7.908)
+2023-08-27 16:53:16.763 [XNIO-1 task-2] INFO  io.undertow.servlet.log:372 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-27 16:53:16.764 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2023-08-27 16:53:16.766 [XNIO-1 task-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2023-08-27 16:53:18.012 [XNIO-1 task-5] INFO  org.springdoc.api.AbstractOpenApiResource.getOpenApi:371 - Init duration for springdoc-openapi is: 591 ms
+2023-08-27 16:53:34.379 [XNIO-1 task-5] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:110 - MyHikariCP - Starting...
+2023-08-27 16:53:34.975 [XNIO-1 task-5] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:565 - MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@46d13fd3
+2023-08-27 16:53:34.978 [XNIO-1 task-5] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:123 - MyHikariCP - Start completed.
+2023-08-27 17:10:07.533 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:56 - 请求开始时间：2023-08-27T17:10:07.533369900
+2023-08-27 17:10:07.534 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:57 - 请求Url : http://localhost:8086/sql/updTable
+2023-08-27 17:10:07.535 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:58 - 请求方式 : POST
+2023-08-27 17:10:07.535 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:59 - 请求ip : 0:0:0:0:0:0:0:1
+2023-08-27 17:10:07.536 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:60 - 请求内容类型 : application/json
+2023-08-27 17:10:07.537 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:61 - 请求参数 : [lab.po.updTablePO@3b2a2e60]
+2023-08-27 17:10:07.537 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:63 - 浏览器 : CHROME8
+2023-08-27 17:10:07.539 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:64 - 浏览器版本 : 85.0.4183.83
+2023-08-27 17:10:07.539 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doBefore:65 - 操作系统: WINDOWS_10
+2023-08-27 17:10:08.394 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:85 - 请求结束时间 : 2023-08-27T17:10:08.394379300
+2023-08-27 17:10:08.395 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:86 - 请求耗时 : 0秒
+2023-08-27 17:10:08.395 [XNIO-1 task-5] INFO  lab.base.util.aspect.LogAspect.doAfterReturning:88 - 请求返回 : {"code":500,"msg":"表单修改失败:org.springframework.jdbc.BadSqlGrammarException: \r\n### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tablename = '测试的表'\n                \n                \n                   ' at line 5\r\n### The error may exist in file [F:\\IdeaProjects\\standardLab\\out\\production\\resources\\mapper\\sqlMapper.xml]\r\n### The error may involve defaultParameterMap\r\n### The error occurred while setting parameters\r\n### SQL: update t_table              SET tabledocno = ?                                                       tablename = ?                                                       remark = ?                                                       tabledocno = ?                                                       type = ?               WHERE id = ?\r\n### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tablename = '测试的表'\n                \n                \n                   ' at line 5\n; bad SQL grammar []"}
+2023-08-27 17:13:17.754 [SpringApplicationShutdownHook] INFO  io.undertow.stop:259 - stopping server: Undertow - 2.3.7.Final
+2023-08-27 17:13:17.758 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log:372 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-27 17:13:17.893 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:350 - MyHikariCP - Shutdown initiated...
+2023-08-27 17:13:17.900 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:352 - MyHikariCP - Shutdown completed.

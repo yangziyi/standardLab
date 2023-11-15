@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lab.dao.logDao">
+
+    <insert id="insT_controls_log">
+		insert into t_controls_log (classname, process, controls, content, result,
+		                            ownerid, ownerusername, ownername, createtime,
+                                    updateid, updateusername, updatename, updatetime)
+		    values (#{classname}, #{process}, #{controls}, #{content}, #{result},
+                    #{ownerid}, #{updateusername}, #{ownername}, now(),
+                    #{updateid}, #{updateusername}, #{updatename}, now())
+    </insert>
+
+</mapper>

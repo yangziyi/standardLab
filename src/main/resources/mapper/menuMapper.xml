@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lab.dao.menuDao">
+
+    <select id="findMenu" resultType="lab.vo.menuVO">
+        select id, parentid, title, componet, path, name, icon, affix, sort from t_menu
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="parentid != null">
+                and parentid = #{parentid}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+        </where>
+        order by id
+    </select>
+
+    <insert id="insMenu">
+		insert into t_menu (parentid, title, componet, path, name, icon, affix, sort)
+		    values
+        <foreach collection="menuPO" item="list" index="index" separator=",">
+		        (#{list.parentid}, #{list.title}, #{list.componet}, #{list.path},
+                    #{list.name}, #{list.icon}, #{list.affix}, #{list.sort})
+        </foreach>
+    </insert>
+
+    <update id="updMenu">
+        <foreach item="item" index="index" collection="menuPO" separator=";">
+            update t_field
+            <set>
+                <if test="item.parentid != null">
+                    parentid = #{item.parentid},
+                </if>
+                <if test="item.title != null and item.title !=''">
+                    title = #{item.title},
+                </if>
+                <if test="item.componet != null and item.componet !=''">
+                    componet = #{item.componet},
+                </if>
+                <if test="item.title != null and item.title !=''">
+                    title = #{item.title},
+                </if>
+                <if test="item.path != null and item.path !=''">
+                    path = #{item.path},
+                </if>
+                <if test="item.name != null and item.name !=''">
+                    name = #{item.name},
+                </if>
+                <if test="item.icon != null and item.icon !=''">
+                    icon = #{item.icon},
+                </if>
+                <if test="item.affix != null">
+                    affix = #{item.affix},
+                </if>
+                <if test="item.sort != null">
+                    sort = #{item.sort},
+                </if>
+            </set>
+            <where>
+                id = #{item.id}
+            </where>
+        </foreach>
+    </update>
+</mapper>

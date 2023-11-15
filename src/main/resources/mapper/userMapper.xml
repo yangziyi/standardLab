@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lab.dao.uUserDao">
+    <select id="findByUsername" resultType="lab.po.userPO">
+        select id, username, name, password, state from t_user
+			<!--where username = #{username}
+			下面定义where标签，如果有条件会自动添加where，如果没有则不添加-->
+			<where>
+			    <!--判断如果username参数不等于空字符串或者null，则添加区间内的SQL
+                所有if标签内的条件都可以加"and"，框架会自动判断如果有多余的and会自动删除，不用担心SQL会错误
+                test标签中的and指多个条件判断时的“且”,or表示“或”-->
+                <if test="username != '' and username != null">
+                    and username = #{username}
+                </if>
+                <if test="password != '' and password != null">
+                    and password = #{password}
+                </if>
+            </where>
+    </select>
+
+    <select id="findByUsername2" resultType="lab.vo.userVO">
+        select id,username,name,password,state from t_user
+        <where>
+            <if test="username != '' and username != null">
+                and username like concat('%', #{username}, '%')
+            </if>
+            <if test="name != '' and name != null">
+                and name like concat('%', #{name}, '%')
+            </if>
+        </where>
+        order by id
+        limit #{start}, #{end}
+    </select>
+
+    <select id="exportExcel" resultType="lab.vo.userVO">
+        select a.id,a.username,a.name,a.password,a.state
+            from t_user a
+        <where>
+            <if test="username != '' and username != null">
+                and a.username like concat('%', #{username}, '%')
+            </if>
+            <if test="name != '' and name != null">
+                and a.name like concat('%', #{name}, '%')
+            </if>
+        </where>
+        order by a.id
+    </select>
+
+    <!--增删改没有返回值，所以不需要resultType-->
+    <insert id="insertUser">
+		insert into t_user (username,name,password,
+                            ownerid, ownerusername, ownername, createtime,
+                            updateid, updateusername, updatename, updatetime)
+		    values (#{username},#{name},#{password},
+                    #{ownerid}, #{updateusername}, #{ownername}, now(),
+                    #{updateid}, #{updateusername}, #{updatename}, now())
+    </insert>
+
+    <insert id="insertUsers">
+		insert into t_user (username,name,password,
+            ownerid, ownerusername, ownername, createtime,
+            updateid, updateusername, updatename, updatetime)
+		    values
+		<!--插入多条数据的方式，collection要和Dao里面的@Param内的名字对应，item和index是自己定义的-->
+        <foreach collection="userUploadPO" item="list" index="index" separator=",">
+            (#{list.username},#{list.name},#{list.password},
+            #{list.ownerid}, #{list.updateusername}, #{list.ownername}, now(),
+            #{list.updateid}, #{list.updateusername}, #{list.updatename}, now())
+        </foreach>
+    </insert>
+
+    <update id="updUser">
+        update t_user
+            <!--添加set字符，set会自动删除下面多余的逗号，放心大胆的写-->
+            <set>
+                <!--判断如果username参数不存在或等于空则不更新-->
+                <if test="username != null and username != ''">
+                    username = #{username},
+                </if>
+                <if test="name != null and name != ''">
+                    name = #{name},
+                </if>
+                <if test="password != null and password !=''">
+                    password = #{password},
+                </if>
+                <if test="state != null">
+                    state = #{state},
+                </if>
+                <if test="updateid != null and updateid !=''">
+                    updateid = #{updateid},
+                </if>
+                <if test="updateusername != null and updateusername !=''">
+                    updateusername = #{updateusername},
+                </if>
+                <if test="updatename != null and updatename !=''">
+                    updatename = #{updatename},
+                </if>
+                updatetime = now()
+            </set>
+            <where>
+                id = #{id}
+            </where>
+    </update>
+
+    <update id="updPwd">
+        update t_user
+        <set>
+            <if test="password != null and password !=''">
+                password = #{password},
+            </if>
+            <if test="updateid != null and updateid !=''">
+                updateid = #{updateid},
+            </if>
+            <if test="updateusername != null and updateusername !=''">
+                updateusername = #{updateusername},
+            </if>
+            <if test="updatename != null and updatename !=''">
+                updatename = #{updatename},
+            </if>
+            updatetime = now()
+        </set>
+        <where>
+            username = #{username}
+        </where>
+    </update>
+
+    <delete id="delUser">
+        delete from t_user
+            <where>
+                <if test="id != null and id != ''">
+                    id = #{id}
+                </if>
+            </where>
+    </delete>
+
+    <select id="findManageId" resultType="String">
+        select manageid from t_user
+        <where>
+            <if test="username != '' and username != null">
+                username = #{username}
+            </if>
+        </where>
+    </select>
+
+
+    <select id="findUsername" resultType="Integer">
+        select count(1)
+            from t_user
+        <where>
+            <if test="username != '' and username != null">
+                and username like concat('%', #{username}, '%')
+            </if>
+            <if test="name != '' and name != null">
+                and name like concat('%', #{name}, '%')
+            </if>
+        </where>
+    </select>
+
+    <!--根据角色找到人员，拼起来-->
+    <select id="findprocseeId" resultType="String">
+        select e.username from t_user e
+        inner join t_user_role er on er.userid=e.id
+        inner join t_role r on r.roleid=er.roleid
+        <where>
+            <if test="rolename != '' and rolename != null">
+                r.rolename= #{rolename}
+            </if>
+
+        </where>
+    </select>
+
+</mapper>

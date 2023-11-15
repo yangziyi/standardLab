@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lab.dao.userDao">
+	
+	<select id="findByUsername" resultType="lab.entity.User">
+		select id,username,name,password,state from t_user
+			where username = #{username}
+	</select>
+	
+	<select id="findPermissions" resultType="String">
+		select a.name
+			from t_role a,t_user b,t_user_role c
+			where c.userid = b.id and c.roleid = a.id
+			and b.username = #{username}
+	</select>
+</mapper>

@@ -1,0 +1,74 @@
+server:
+  port: 8080
+  undertow:
+    io-threads: 10
+
+spring:
+  # 数据库配置
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowMultiQueries=true&nullCatalogMeansCurrent=true
+    username: root
+    password: 123456
+    # Hikari 连接池配置
+    # 最小空闲连接数量
+    hikari:
+      minimum-idle: 5
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 180000
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 10
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名称
+      pool-name: MyHikariCP
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 1800000
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    global-config:
+      db-config:
+        table-prefix: t_
+        id-type: auto
+    type-aliases-package: com.entity
+    mapper-locations: classpath:mapper/*.xml
+  #redis
+  redis:
+    database: 0             #数据库，默认为0
+    host: 127.0.0.1         #数据库地址
+    port: 6379              #端口号
+    password:               #空
+    pool:
+      max-active: 20        #连接池最大连接数（使用负值表示没有限制）
+      max-wait: 60000       #连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-idle: 20          #最大空闲连接数
+      min-idle: 5           #最小空闲连接数
+      timeout: 300          #连接超时时间（毫秒）
+
+#流程
+flowable:
+  #异步执行
+  async-executor-activate: true
+  #自动更新数据库
+  database-schema-update: true
+  #校验流程文件，默认校验resources下的processes文件夹里的流程文件
+  process-definition-location-prefix: classpath*:/processes/
+  process-definition-location-suffixes: "**.bpmn20.xml, **.bpmn"
+
+## 文件存储所需参数
+# 所有文件都将存储在此目录下
+file:
+  upload-dir: E:\imageFile
+
+#配置Mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+#日志配置
+logging:
+  config: classpath:logback-spring.xml
